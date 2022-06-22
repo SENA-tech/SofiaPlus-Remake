@@ -1,6 +1,8 @@
 {
   "name": "sf-remake",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "a rework for the sofia plus portal",
+  "main": "src/index.jsx",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -12,10 +14,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start": "serve -s build"
   },
   "eslintConfig": {
     "extends": [

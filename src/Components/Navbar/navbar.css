@@ -1,0 +1,96 @@
+nav,
+.navSF {
+    position: fixed;
+    width: 100%;
+}
+
+.navSF-Base {
+    border-bottom: solid 5px #000;
+    background: #61b235;
+    width: 100%;
+    height: 20%;
+    display: grid;
+    grid-template-areas: "n01 n02 n03";
+    align-items: center;
+}
+
+.navSF-Base-Logo, .navSF-Base-Search, .navSF-Base-User, .navSF-Base-Search-container, .FormSearch, #btn-searcher {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center
+}
+
+.FormSearch {
+    width: 95%;
+}
+
+.navSF-Base-Search-container {
+    width: 40%;
+    border-radius: 50px;
+    outline: 5px #000 solid;
+}
+
+.navSF-Base-Logo {
+    grid-area: n01;
+}
+
+.navSF-Base-Search {
+    height: 85%;
+    grid-area: n02;
+}
+
+.navSF-Base-User {
+    width: auto;
+    grid-area: n03;
+}
+
+/*---------Search Form----------*/
+
+#searcher {
+    width: 100%;
+    height: 30px;
+    cursor: text;
+    border: none;
+    background: transparent;
+    padding: 0 0 0 20px;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+/*---------Options Form---------*/
+
+.navSF-Opt {
+    display: flex;
+    justify-content: center;
+}
+
+.navSF-Options {
+    display: block;
+    border-radius: 10px;
+    border: solid 5px #000;
+    font-size: xx-large;
+    position: absolute;
+    top: 110%;
+    width: 90%;
+    background: #4b7f30;
+}
+
+.navSF-Options-selects ul li{
+    margin: 5px auto;
+}
+
+.navSF-Options-selects ul {
+    margin: 5px 0px 5px 0px;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
