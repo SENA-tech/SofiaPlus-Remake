@@ -5,12 +5,12 @@ import NavbarSearch from './navSearch';
 import NavbarUser from './navUser';
 import Logo from './navLogo';
 
-export default function NavBase() {
+export default function NavBase({ visible, hidden }) {
     return (
         <div className="navSF-Base">
             <Logo />
             <NavbarSearch />
-            <NavbarUser />
+            <NavbarUser visible={visible} hide={hidden}/>
         </div>
     );
 }

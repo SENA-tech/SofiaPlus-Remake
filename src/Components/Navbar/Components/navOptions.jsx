@@ -1,18 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 //SubComponents
 import NavOptions from './options';
 
-//Hooks
-import useNavbar from '../../../Hooks/useNavbar';
-
 export default function NavOption() {
-
-    const { navbar, visible, actived } = useNavbar();
 
     return (
 
-        <div className="navSF-Options" style={{ display: visible }}>
+        <div className="navSF-Options">
             <NavOptions />
         </div>
 

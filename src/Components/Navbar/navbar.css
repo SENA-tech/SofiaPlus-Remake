@@ -2,6 +2,7 @@ nav,
 .navSF {
     position: fixed;
     width: 100%;
+    transition: 0.5s all ease;
 }
 
 .navSF-Base {

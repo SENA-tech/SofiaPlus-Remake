@@ -8,7 +8,7 @@ export default function navSearch() {
 
         <div className="navSF-Base-Search">
             <div className="navSF-Base-Search-container">
-                <SearchForm />
+                <SearchForm/>
             </div>
         </div>
 

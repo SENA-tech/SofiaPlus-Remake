@@ -1,17 +1,19 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const useNavbar = () => {
 
-    const [navbar, setNavbar] = useState(true);
+    const [navbar, setNavbar] = useState(false);
     const [visible, setVisible] = useState('block');
 
-    const actived = (property) => {
+    const actived = () => {
 
-        setNavbar(!property);
+        setNavbar(!navbar);
 
         if (navbar === true) {
-            setVisible('block');
+            console.log(navbar);
+            setVisible('flex');
         } else {
+            console.log(navbar);
             setVisible('none');
         };
 

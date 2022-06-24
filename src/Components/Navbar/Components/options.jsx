@@ -1,14 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 
-export default function options() {
+//Data
+import Data from '../data';
+
+export default function Options() {
+
+    const token = window.localStorage.getItem('token');
+
+    let array = [];
+
+    let login = Data.login;
+    let register = Data.register;
+
+    fetch('http://localhost/restapi/index.php')
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(e => console.error(e))
 
     return (
 
         <div className="navSF-Options-selects">
             <ul>
-                <li>Hola</li>
-                <li>Bienvenidos</li>
-                <li>Wellcome</li>
+                {
+
+                    token
+                        ? // If
+                        login.map(e => {
+                            return <li key={e}>{e}</li>
+                        })
+                        : //Else
+                        register.map(e => {
+                            return <li key={e.type}>
+                                <Link to={e.url}>{e.type}</Link>
+                            </li>
+                        })
+
+                }
             </ul>
         </div>
 

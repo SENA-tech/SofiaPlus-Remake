@@ -8,20 +8,19 @@ import './navbar.css'
 
 export default function Navbar() {
 
-    const [useNav, setUseNav] = useState();
+    const [styled, setStyled] = useState('none')
 
-    const usenav = property => {
-        return 
-    }
+    const visible = () => setStyled('flex');
 
+    const hidden = () => setStyled('none');
 
     return (
 
         <nav>
             <div className="navSF" >
-                <NavbarBase />
-                <div className="navSF-Opt">
-                    <NavbarOptions use={}/>
+                <NavbarBase visible={visible} hidden={hidden}/>
+                <div className="navSF-Opt" style={{ display: styled }}>
+                    <NavbarOptions />
                 </div>
             </div >
         </nav>
