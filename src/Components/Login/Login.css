@@ -1,0 +1,53 @@
+.Login-Form {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+}
+
+.formLogin {
+    border: 4px solid #000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: #61b235;
+    width: 465px;
+    height: 510px;
+}
+
+#Login {
+    font-size: 1.3rem;
+    width: 85%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#BtnLogin {
+    height: 12%;
+    background: #2ca7bb;
+}
+
+#BtnLogin:hover {
+    cursor: pointer;
+    background: #217a89;
+}
+
+.LoginInputs {
+    border-radius: 7px;
+    text-align: center;
+    width: 55%;
+    height: 8%;
+    margin: 15px auto;
+}

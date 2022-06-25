@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 //Data
 import Data from '../data';
@@ -8,14 +8,11 @@ export default function Options() {
 
     const token = window.localStorage.getItem('token');
 
-    let array = [];
-
     let login = Data.login;
     let register = Data.register;
 
     fetch('http://localhost/restapi/index.php')
         .then(res => res.json())
-        .then(data => console.log(data))
         .catch(e => console.error(e))
 
     return (

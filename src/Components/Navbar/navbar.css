@@ -1,5 +1,7 @@
 nav,
 .navSF {
+    z-index: 3;
+    top: 0;
     position: fixed;
     width: 100%;
     transition: 0.5s all ease;
@@ -74,8 +76,8 @@ button {
 .navSF-Options {
     display: block;
     border-radius: 10px;
-    border: solid 5px #000;
-    font-size: xx-large;
+    border: solid 4px #000;
+    font-size: x-large;
     position: absolute;
     top: 110%;
     width: 90%;

@@ -1,0 +1,86 @@
+main {
+    padding: 8% 2% 0 2%;
+    z-index: 0;
+    position: relative;
+}
+
+.homeSF {
+    display: flex;
+}
+
+.homeSFb {
+    display: flex;
+    position: relative;
+    padding: 2.5%;
+    width: 50%;
+}
+
+.body02 {
+    justify-content: center;
+}
+
+.text-body {
+    text-align: center;
+}
+
+.body-titles {
+    font-weight: bold;
+    color: #2ca7bb;
+    font-size: 2.45rem;
+}
+
+.title-h2 {
+    font-size: 1.90rem;
+}
+
+#body-textlorem {
+    font-size: large;
+    padding: 35px;
+}
+
+#body-information {
+    margin: 20px;
+    font-size: larger;
+    padding: 10px 55px 10px 55px;
+    background: #20a6bc;
+    border-radius: 25px;
+    border: solid 1px #217a89;
+}
+
+#body-img1 {
+    z-index: 1;
+    width: 450px;
+    height: 450px;
+    top: 0;
+    background: url(https://www.senavirtualsofiaplus.com/wp-content/uploads/2014/07/Curso-de-Soldadura-Sena.png);
+    background-size: cover;
+}
+
+#body-img2 {
+    width: 280px;
+    height: 280px;
+    z-index: 0;
+    right: 0;
+    bottom: 10%;
+    background: url(https://estudiaconsenasofiaplus.com/wp-content/uploads/2018/02/muestras-quimicas-sena-sofia-plus-1024x683.jpg);
+    background-size: cover;
+}
+
+#body-img3 {
+    width: 230px;
+    height: 230px;
+    z-index: -1;
+    bottom: 10%;
+    left: 10%;
+    margin: 0 auto;
+    background: url(http://www.sena-sofia-plus.co/wp-content/uploads/2016/03/Mas-tecnologia-e-innovacion-para-el-SENA-.jpg);
+    background-size: cover;
+}
+
+.body--img {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: solid 1px #4b7f30;
+}
