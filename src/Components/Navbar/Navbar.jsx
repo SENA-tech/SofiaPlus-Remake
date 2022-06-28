@@ -20,7 +20,7 @@ export default function Navbar() {
             <div className="navSF" >
                 <NavbarBase visible={visible} hidden={hidden}/>
                 <div className="navSF-Opt" style={{ display: styled }}>
-                    <NavbarOptions />
+                    <NavbarOptions setter={hidden}/>
                 </div>
             </div >
         </nav>

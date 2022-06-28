@@ -8,7 +8,7 @@ export default function navLogo() {
     return (
 
         <div className="navSF-Base-Logo" >
-            <img src={SFLogoL} alt="SofiaPlus Remake" height={80} />
+            <img src={SFLogoL} alt="SofiaPlus Remake" height={80} id='logo-Nav'/>
         </div >
 
     );

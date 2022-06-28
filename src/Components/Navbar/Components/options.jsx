@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 //Data
 import Data from '../data';
 
-export default function Options() {
+export default function Options({ setter }) {
 
     const token = window.localStorage.getItem('token');
 
@@ -29,7 +29,7 @@ export default function Options() {
                         : //Else
                         register.map(e => {
                             return <li key={e.type}>
-                                <Link to={e.url}>{e.type}</Link>
+                                <Link onClick={() => { setter() }} to={e.url}>{e.type}</Link>
                             </li>
                         })
 

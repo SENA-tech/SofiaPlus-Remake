@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 //CSS
 import './Login.css'
@@ -15,7 +16,7 @@ export default function LoginForm() {
 
         <div className="Login-Form">
             <div className="formLogin">
-                <form action="http://localhost/CRUD/server/signup.php" method='POST' id='Login'>
+                <form action="http://localhost/CRUD/server/signing.php" method='POST' id='Login'>
                     <label>Identificacion</label>
                     <input type="text" name="Identification" id="ID" className='LoginInputs' />
                     <label>Contraseña</label>
@@ -23,6 +24,9 @@ export default function LoginForm() {
                     <input type="submit" value="Iniciar Sesion" id='BtnLogin' className='LoginInputs' />
                 </form>
             </div>
+            <Link to='/'>
+                <div className="ext" />
+            </Link>
         </div>
 
     )

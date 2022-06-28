@@ -16,6 +16,9 @@ nav,
     grid-template-areas: "n01 n02 n03";
     align-items: center;
 }
+#logo-Nav {
+    cursor: pointer;
+}
 
 .navSF-Base-Logo, .navSF-Base-Search, .navSF-Base-User, .navSF-Base-Search-container, .FormSearch, #btn-searcher {
     display: flex;
