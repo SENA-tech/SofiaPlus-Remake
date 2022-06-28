@@ -13,8 +13,8 @@ export default function Body01() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, minima ullam! Veritatis officiis rem aliquid earum corporis excepturi. Totam quaerat quas eligendi fuga rerum ipsum corrupti neque blanditiis vel voluptatibus!
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusamus esse aperiam similique autem tenetur, error quos dicta architecto, quaerat asperiores ea exercitationem, inventore veniam consequatur explicabo. Voluptate, deleniti adipisci.
                 </p>
-                <Link to='/about'>
-                    <button id='body-information'>Mas Informacion</button>
+                <Link to='/about' id='body-information'>
+                    Mas Informacion
                 </Link>
             </div>
 

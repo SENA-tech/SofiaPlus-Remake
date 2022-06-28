@@ -17,14 +17,14 @@ export default function LoginForm() {
         <div className="Login-Form">
             <div className="formLogin">
                 <form action="http://localhost/CRUD/server/signing.php" method='POST' id='Login'>
-                    <label>Identificacion</label>
+                    <label htmlFor='ID'>Identificacion</label>
                     <input type="text" name="Identification" id="ID" className='LoginInputs' />
-                    <label>Contraseña</label>
+                    <label htmlFor='Pass'>Contraseña</label>
                     <input type="text" name="Password" id="Pass" className='LoginInputs' />
                     <input type="submit" value="Iniciar Sesion" id='BtnLogin' className='LoginInputs' />
                 </form>
             </div>
-            <Link to='/'>
+            <Link to='/' aria-label='exit to login form'>
                 <div className="ext" />
             </Link>
         </div>

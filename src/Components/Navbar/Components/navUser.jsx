@@ -3,27 +3,13 @@ import React, { useState } from 'react';
 //Data
 import UserLogo from '../Import/UserLogo.png'
 
-export default function NavUser({ visible, hide }) {
-
-    const [options, setOptions] = useState(true);
-
-    const setter = () => {
-
-        setOptions(!options);
-
-        if (options === true) {
-            visible();
-        } else {
-            hide();
-        }
-
-    }
+export default function NavUser({ visible }) {
 
     return (
 
         <div className="navSF-Base-User">
-            <button onClick={() => { setter() }}>
-                <img src={UserLogo} alt="sofia plus user" height={60}/>
+            <button onClick={() => { visible() }}>
+                <img src={UserLogo} alt="sofia plus user" height={60} width={60}/>
             </button>
         </div>
 

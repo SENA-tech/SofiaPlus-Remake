@@ -11,8 +11,11 @@ export default function Options({ setter }) {
     let login = Data.login;
     let register = Data.register;
 
+    console.log('options')
+
     fetch('http://localhost/restapi/index.php')
         .then(res => res.json())
+        .then(data => window.localStorage.setItem('dataAPI', JSON.stringify(data)))
         .catch(e => console.error(e))
 
     return (
