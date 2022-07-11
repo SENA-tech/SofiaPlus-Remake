@@ -6,16 +6,13 @@ import Data from '../data';
 
 export default function Options({ setter }) {
 
-    const token = window.localStorage.getItem('token');
+    const token = window.sessionStorage;
 
-    let login = Data.login;
-    let register = Data.register;
-
-    console.log('options')
+    console.log(token)
 
     fetch('http://localhost/restapi/index.php')
         .then(res => res.json())
-        .then(data => window.localStorage.setItem('dataAPI', JSON.stringify(data)))
+        .then(data => console.log(data[0].nombres))
         .catch(e => console.error(e))
 
     return (
@@ -26,13 +23,15 @@ export default function Options({ setter }) {
 
                     token
                         ? // If
-                        login.map(e => {
-                            return <li key={e}>{e}</li>
+                        Data.login.map(e => {
+                            return <li key={e.type}>
+                                <Link onClick={() => { setter() }} to={e.url}>{e.name}</Link>
+                            </li>
                         })
                         : //Else
-                        register.map(e => {
+                        Data.register.map(e => {
                             return <li key={e.type}>
-                                <Link onClick={() => { setter() }} to={e.url}>{e.type}</Link>
+                                <Link onClick={() => { setter() }} to={e.url}>{e.name}</Link>
                             </li>
                         })
 

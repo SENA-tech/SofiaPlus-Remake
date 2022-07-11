@@ -1,14 +1,39 @@
 
-const login = ["Perfil", "Territorium", "Soporte", "Cerrar Sesion"];
+//"Perfil", "Territorium", "Soporte", "Cerrar Sesion"
+
+const login = [
+    {
+        type: "Profile",
+        name: "Perfil",
+        url: "/Profile"
+    },
+    {
+        type: "Territorium",
+        name: "Territorium",
+        url: "/territorium"
+    },
+    {
+        type: "Support",
+        name: "Soporte",
+        url: "/Support"
+    },
+    {
+        type: "Logout",
+        name: "Cerrar Sesion",
+        url: "/Logout"
+    }
+];
 
 const register = [
     {
-        type: "Iniciar Sesion",
+        type: "Login",
+        name: "Inicia Sesion",
         url: "/login"
     },
     {
-        type: "Registrarse",
-        url: "/logout"
+        type: "Logout",
+        name: "Registrarse",
+        url: "/singin"
     }
 ];
 

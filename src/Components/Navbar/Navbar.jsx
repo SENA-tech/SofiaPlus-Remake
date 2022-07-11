@@ -12,8 +12,6 @@ export default function Navbar() {
 
     const visible = () => setStyled(!styled);
 
-    console.log('navbar')
-
     return (
 
         <nav>

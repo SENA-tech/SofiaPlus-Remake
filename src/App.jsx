@@ -8,6 +8,11 @@ import Navbar from './Components/Navbar/Navbar';
 import Login from './Components/Login/LoginForm';
 
 export default function App() {
+
+  fetch('http://localhost/CRUD/server/signing.php')
+  .then(res => res.json())
+  .then(data => console.log(data))
+
   return (
 
     <div>
