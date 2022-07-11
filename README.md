@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# > 🚀 release of SofiaPlus Remake
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### This project aims to improve the current portal of SENA <code>SofiaPlus</code>, bringing improvements and improved functions, all created from scratch
 
-In the project directory, you can run:
+This project uses technologies such as:
 
-### `npm start`
+| <img height="80px" width="80px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"> | <img width="80px" height="80px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"> | <img height="80px"  width="80px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/php/php.png"> | <img height="80px" width="80px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png"> |<img height="80px" width="80px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"> |
+| :---: | :---: | :---: | :---: | :---: |
+| ReactJs | NodeJs | PHP | SQL | JavaScript |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# > 💼 Work Team
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| <img height ="80px" width="80px" src="https://avatars.githubusercontent.com/u/101137073?v=4"> | <img height ="80px" width="80px" src="https://avatars.githubusercontent.com/u/101153810?v=4"> | <img height ="80px" width="80px" src="https://avatars.githubusercontent.com/u/101998879?v=4"> | <img height ="80px" width="80px" src="https://avatars.githubusercontent.com/u/101999070?v=4"> | <img height ="80px" width="80px" src="https://avatars.githubusercontent.com/u/101999101?v=4"> | <img height ="80px" width="80px" src="https://avatars.githubusercontent.com/u/84690368?v=4">|
+| :---: | :---: | :---: | :---:| :---: | :---: |
+| <code>@QuinroXd</code> | <code>@Johan30c</code> | <code>@juliethpicom</code> | <code>@santiagorsrd</code> | <code>@Natalia-ki</code>  | <code>@PintoGamer64</code> |
+| FrontEnd<br>Designer | BackEnd<br>DB Manager | BackEnd<br>DB Manager | FrontEnd<br>Designer | BackEnd<br>Testing | Leader<br>DevOps<br>FullStack |
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img height="483px" width="753px" src="https://user-images.githubusercontent.com/84690368/178127391-008d3913-f4bd-4ba3-8cc0-ca2a6be9eeb6.png">
