@@ -6,21 +6,13 @@ import Data from '../data';
 
 export default function Options({ setter }) {
 
-    const token = window.sessionStorage;
-
-    console.log(token)
-
-    fetch('http://localhost/restapi/index.php')
-        .then(res => res.json())
-        .then(data => console.log(data[0].nombres))
-        .catch(e => console.error(e))
+    let token = window.localStorage.getItem('SessionID')
 
     return (
 
         <div className="navSF-Options-selects">
             <ul>
                 {
-
                     token
                         ? // If
                         Data.login.map(e => {
@@ -34,7 +26,6 @@ export default function Options({ setter }) {
                                 <Link onClick={() => { setter() }} to={e.url}>{e.name}</Link>
                             </li>
                         })
-
                 }
             </ul>
         </div>

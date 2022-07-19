@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Outlet } from 'react-router-dom';
+import Footer from '../../Components/Footer/Footer';
 
 //Components
 import Body1 from './Components/body01-Text';
@@ -21,6 +22,7 @@ export default function Home() {
             <div className='homeSF'>
                 <Outlet />
             </div>
+            <Footer />
         </div>
 
     )
