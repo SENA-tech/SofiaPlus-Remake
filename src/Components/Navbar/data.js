@@ -1,6 +1,3 @@
-
-//"Perfil", "Territorium", "Soporte", "Cerrar Sesion"
-
 const login = [
     {
         type: "Profile",

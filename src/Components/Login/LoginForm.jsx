@@ -6,14 +6,6 @@ import './Login.css'
 
 export default function LoginForm() {
 
-    /*<label>Tipo de Documento</label>
-                    <select name="Type" id="TYPE" className='LoginInputs' >
-                        <option value="TI">TI</option>
-                        <option value="CC">CC</option>
-                    </select>*/
-
-
-
     return (
 
         <div className="Login-Form">
