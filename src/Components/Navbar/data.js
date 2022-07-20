@@ -2,22 +2,17 @@ const login = [
     {
         type: "Profile",
         name: "Perfil",
-        url: "/Profile"
-    },
-    {
-        type: "Territorium",
-        name: "Territorium",
-        url: "/territorium"
+        url: "/profile"
     },
     {
         type: "Support",
         name: "Soporte",
-        url: "/Support"
+        url: "/support"
     },
     {
         type: "Logout",
         name: "Cerrar Sesion",
-        url: "/Logout"
+        url: "/logout"
     }
 ];
 
@@ -34,4 +29,12 @@ const register = [
     }
 ];
 
-module.exports = { login, register }
+const territorium = [
+    {
+        type: "Territorium",
+        name: "Territorium",
+        url: "https://sena.territorio.la/cms/index.php"
+    }
+]
+
+module.exports = { login, register, territorium }

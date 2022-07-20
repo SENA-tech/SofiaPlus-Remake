@@ -15,11 +15,17 @@ nav,
     grid-template-areas: "n01 n02 n02 n03";
     align-items: center;
 }
+
 #logo-Nav {
     cursor: pointer;
 }
 
-.navSF-Base-Logo, .navSF-Base-Search, .navSF-Base-User, .navSF-Base-Search-container, .FormSearch, #btn-searcher {
+.navSF-Base-Logo,
+.navSF-Base-Search,
+.navSF-Base-User,
+.navSF-Base-Search-container,
+.FormSearch,
+#btn-searcher {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -48,6 +54,7 @@ nav,
 
 .navSF-Base-Search-container {
     width: 40%;
+    background: #4dad33;
     border-radius: 10px;
     outline: 3px #282828 solid;
 }
@@ -96,8 +103,28 @@ button {
     background: #4dad33;
 }
 
-.navSF-Options-selects ul li{
+.navSF-Options-selects {
+    padding: 4px 0;
+}
+
+.navSF-Options-selects ul li {
     margin: 5px auto;
+}
+
+.navSF-Options-selects ul li a {
+    padding: 10px;
+}
+
+.navSF-Options-selects ul li:hover,
+.navSF-Options-selects ul li a:hover {
+    border-radius: 10px;
+    background-color: #52952e;
+    transition: all 0.2s;
+}
+
+.navSF-Options-selects ul li a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .navSF-Options-selects ul {

@@ -8,6 +8,8 @@ import Navbar from './Components/Navbar/Navbar';
 import Login from './Components/Login/LoginForm';
 import Footer from './Components/Footer/Footer';
 import About from './Routes/About/About';
+import Suport from './Routes/Suport/Suport';
+import Profile from './User/User';
 
 export default function App() {
 
@@ -20,6 +22,7 @@ export default function App() {
           <Route path='login' element={<Login />} />
         </Route >
         <Route path='/about' element={<About />} />
+        <Route path='/support' element={<Suport />} />
       </Routes >
       <Footer />
     </div>

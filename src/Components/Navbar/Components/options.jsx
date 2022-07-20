@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 //Data
-import Data from '../data';
+import { login, register, territorium } from '../data';
 
 export default function Options({ setter }) {
 
@@ -15,18 +15,25 @@ export default function Options({ setter }) {
                 {
                     token
                         ? // If
-                        Data.login.map(e => {
+                        login.map(e => {
                             return <li key={e.type}>
                                 <Link onClick={() => { setter() }} to={e.url}>{e.name}</Link>
                             </li>
                         })
                         : //Else
-                        Data.register.map(e => {
-                            return <li key={e.type}>
+                        register.map(e => {
+                            return (
+
+                            <li key={e.type}>
                                 <Link onClick={() => { setter() }} to={e.url}>{e.name}</Link>
                             </li>
+                            
+                            )
                         })
                 }
+                <li key={territorium[0].type}>
+                    <a href={territorium[0].url} target="_blank" >{ territorium[0].name }</a >
+                </li>
             </ul>
         </div>
 

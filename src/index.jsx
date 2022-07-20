@@ -11,13 +11,10 @@ root.render(
 
     <StrictMode>
         <BrowserRouter>
-            <Routes>
-                <Route path='/home' element={<App />}/>
-                <Route path='/profile' element={<User />}/>
-            </Routes>
+            <App />
         </BrowserRouter>
     </StrictMode>
-    
+
 );
 
 // If you want to start measuring performance in your app, pass a function
