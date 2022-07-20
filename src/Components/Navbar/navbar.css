@@ -8,12 +8,11 @@ nav,
 }
 
 .navSF-Base {
-    border-bottom: solid 5px #000;
-    background: #61b235;
+    background: #52952e;
     width: 100%;
     height: 20%;
     display: grid;
-    grid-template-areas: "n01 n02 n03";
+    grid-template-areas: "n01 n02 n02 n03";
     align-items: center;
 }
 #logo-Nav {
@@ -31,12 +30,6 @@ nav,
     width: 95%;
 }
 
-.navSF-Base-Search-container {
-    width: 40%;
-    border-radius: 50px;
-    outline: 5px #000 solid;
-}
-
 .navSF-Base-Logo {
     grid-area: n01;
 }
@@ -52,6 +45,16 @@ nav,
 }
 
 /*---------Search Form----------*/
+
+.navSF-Base-Search-container {
+    width: 40%;
+    border-radius: 10px;
+    outline: 3px #282828 solid;
+}
+
+.navSF-Base-Search-container:hover {
+    outline: 3px #000000 solid;
+}
 
 #Searcher {
     width: 100%;
@@ -85,12 +88,12 @@ button {
 .navSF-Options {
     display: block;
     border-radius: 10px;
-    border: solid 4px #000;
+    border: solid 3px #4b7f30;
     font-size: x-large;
     position: absolute;
     top: 110%;
     width: 90%;
-    background: #4b7f30;
+    background: #4dad33;
 }
 
 .navSF-Options-selects ul li{

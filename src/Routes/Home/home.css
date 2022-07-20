@@ -22,6 +22,7 @@ main {
 
 .text-body {
     text-align: center;
+    margin: auto 0;
 }
 
 .body-titles {
@@ -52,38 +53,28 @@ main {
 
 #body-img1 {
     z-index: 1;
-    width: 450px;
-    height: 450px;
-    top: 0;
-    background: url(https://www.senavirtualsofiaplus.com/wp-content/uploads/2014/07/Curso-de-Soldadura-Sena.png);
-    background-size: cover;
+    width: 100%;
 }
 
-#body-img2 {
-    width: 280px;
-    height: 280px;
-    z-index: 0;
-    right: 0;
-    bottom: 10%;
-    background: url(https://estudiaconsenasofiaplus.com/wp-content/uploads/2018/02/muestras-quimicas-sena-sofia-plus-1024x683.jpg);
-    background-size: cover;
-}
+@media screen and (max-width: 680px) {
 
-#body-img3 {
-    width: 230px;
-    height: 230px;
-    z-index: -1;
-    bottom: 10%;
-    left: 10%;
-    margin: 0 auto;
-    background: url(http://www.sena-sofia-plus.co/wp-content/uploads/2016/03/Mas-tecnologia-e-innovacion-para-el-SENA-.jpg);
-    background-size: cover;
-}
+    .homeSFb {
+        padding: 0;
+        display: block;
+        width: 100%;
+    }
 
-.body--img {
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    border: solid 1px #4b7f30;
+    .body01 {
+        padding: 20% 2.5% 2.5% 2.5%;
+        width: 100%;
+    }
+
+    .text-body {
+        margin: 0 0 2.5% 0;
+    }
+
+    .body02 {
+        width: 0;
+    }
+
 }

@@ -1,13 +1,13 @@
 import React from 'react';
 
+import LaretalImg from '../Import/lateral.png';
+
 export default function Body02() {
 
     return(
 
         <div className="homeSFb body02">
-            <div id='body-img1' className='body--img' />
-            <div id='body-img2' className='body--img' />
-            <div id='body-img3' className='body--img' />
+            <img src={LaretalImg} id='body-img1' className='body--img' />
         </div>
 
     )

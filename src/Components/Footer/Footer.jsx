@@ -33,21 +33,21 @@ export default function Footer() {
                     <div className="colum2">
                         <h1>Redes Sociales</h1>
 
-                        <div className="row">
+                        <div className="row2">
                             <img src={imgs.facebook} alt='logosSena' />
-                            <label>Facebook</label>
+                            <label className='row-label'>Facebook</label>
                         </div>
-                        <div className="row">
+                        <div className="row2">
                             <img src={imgs.twitter} alt='logosSena' />
-                            <label>Twitter</label>
+                            <label className='row-label'>Twitter</label>
                         </div>
-                        <div className="row">
+                        <div className="row2">
                             <img src={imgs.instagram} alt='logosSena' />
-                            <label>Instagram</label>
+                            <label className='row-label'>Instagram</label>
                         </div>
-                        <div className="row">
+                        <div className="row2">
                             <img src={imgs.youtube} alt='logosSena' />
-                            <label>youtube</label>
+                            <label className='row-label'>youtube</label>
                         </div>
                     </div>
 
@@ -56,19 +56,19 @@ export default function Footer() {
 
                         <div className="row2">
                             <img src={imgs.logoSena} alt='logosSena' />
-                            <label>
+                            <label className='row-label'>
                                 centro de materiales y ensayos|Sonia ortega|Joan cardozo
                             </label>
                         </div>
 
                         <div className="row2">
                             <img src={imgs.logoSena} alt='logosSena' />
-                            <label>+57 ejemplo numero</label>
+                            <label className='row-label'>+57 ejemplo numero</label>
                         </div>
 
                         <div className="row2">
                             <img src={imgs.logoSena} alt='logosSena' />
-                            <label>Sena</label>
+                            <label className='row-label'>Sena</label>
                         </div>
                     </div>
                 </div>

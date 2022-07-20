@@ -11,7 +11,7 @@ export default function Body01() {
                 <h1 className='body-titles'>El portal de oferta educativa SENA</h1>
                 <p id='body-textlorem'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis laborum sed voluptates eum, earum dolorem modi culpa vel non voluptate soluta aut voluptatem officia recusandae officiis nisi? Consectetur, cupiditate quasi.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, minima ullam! Veritatis officiis rem aliquid earum corporis excepturi. Totam quaerat quas eligendi fuga rerum ipsum corrupti neque blanditiis vel voluptatibus!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusamus esse aperiam similique autem tenetur, error quos dicta architecto, quaerat asperiores ea exercitationem, inventore veniam consequatur explicabo. Voluptate, deleniti adipisci.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
                 <Link to='/about' id='body-information'>
                     Mas Informacion

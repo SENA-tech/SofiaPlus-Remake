@@ -28,12 +28,12 @@ const register = [
     {
         type: "Login",
         name: "Inicia Sesion",
-        url: "/login"
+        url: "login"
     },
     {
         type: "Logout",
         name: "Registrarse",
-        url: "/singin"
+        url: "singin"
     }
 ];
 
