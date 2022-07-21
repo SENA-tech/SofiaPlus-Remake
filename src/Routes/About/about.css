@@ -1,0 +1,29 @@
+.about-section {
+    padding: 8% 2% 5%;
+}
+
+.about-section h1 {
+    margin: 10px 0;
+}
+
+.cuadro_informacion {
+    border-radius: 5px;
+    background-color: #e6f1e2;
+    border: #bde3af solid 1px;
+    padding: 20px;
+    margin: 2%;
+    line-height: 1.42857143;
+    color: #333333;
+}
+
+.cuadro_informacion ul {
+    padding: 0 0 0 30px;
+}
+
+.subtitulo {
+    color: #5eb319;
+}
+
+.info_text {
+    margin-left: 15px;
+}
