@@ -8,6 +8,7 @@ import Login from './Components/Login/LoginForm';
 import Footer from './Components/Footer/Footer';
 import About from './Routes/About/About';
 import Suport from './Routes/Suport/Suport';
+import RegisterForm from './Components/Register/register';
 
 export default function App() {
 
@@ -18,6 +19,7 @@ export default function App() {
       <Routes >
         <Route path='/' element={<Home />} >
           <Route path='login' element={<Login />} />
+          <Route path='register' element={<RegisterForm />} />
         </Route >
         <Route path='/about' element={<About />} />
         <Route path='/support' element={<Suport />} />

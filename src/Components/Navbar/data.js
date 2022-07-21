@@ -23,9 +23,9 @@ const register = [
         url: "login"
     },
     {
-        type: "Logout",
+        type: "Register",
         name: "Registrarse",
-        url: "singin"
+        url: "register"
     }
 ];
 
