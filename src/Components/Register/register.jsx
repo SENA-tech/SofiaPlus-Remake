@@ -37,7 +37,10 @@ export default function RegisterForm() {
                                 <input required type="password" name="Password" className="LoginInputs" id="contraseña" placeholder="Constraseña" />
                             </div>
                             <br />
-                            <input type="submit" value="Registrate" className="btn-primary" /><br /><br />
+                            <Link to='/' aria-label='exit to login form'>
+                                <input type="submit" value="Registrate" className="btn-primary" />
+                            </Link>
+                            <br /><br />
                             <small>Si ya tienes un usuario <Link to='/login'>Inicia Sesion</Link></small>
                         </div>
                     </form>
