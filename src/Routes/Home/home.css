@@ -26,6 +26,10 @@ main {
     margin: auto 0;
 }
 
+.img-link-about {
+    margin: 0 20px;
+}
+
 .body-titles {
     font-weight: bold;
     color: #11383f;
@@ -38,12 +42,15 @@ main {
 }
 
 #body-information {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     font-family: Helvetica, sans-serif;
     color: #000;
-    font-size: 1rem;
+    font-size: 1.17rem;
     text-decoration: none;
     margin: 20px;
-    padding: 10px 55px 10px 55px;
+    padding: 10px 20px;
     background: #30a5bb;
     border-radius: 25px;
     border: solid 1px #217a89;

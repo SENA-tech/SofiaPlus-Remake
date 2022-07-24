@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 
+//Data
+import { FlechaDown } from '../data';
+
 export default function Body01() {
 
     return (
@@ -13,7 +16,9 @@ export default function Body01() {
                 </h3>
                 <h1>
                     <Link to='/about' id='body-information'>
+                        <img className='img-link-about' src={FlechaDown} width="25px" />
                         Mas Informacion
+                        <img className='img-link-about' src={FlechaDown} width="25px" />
                     </Link>
                 </h1>
             </div>
