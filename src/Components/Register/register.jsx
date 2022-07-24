@@ -24,12 +24,12 @@ export default function RegisterForm() {
                             <br />
                             <div className="mb-3">
                                 <label htmlFor='identificacion' className="form-label">Identificacion</label>
-                                <input required type='number' name="Identificacion" className="LoginInputs" id="identificacion" placeholder="Constraseña" />
+                                <input required type='number' name="Identificacion" className="LoginInputs" id="identificacion" placeholder="Identificacion" />
                             </div>
                             <br />
                             <div className="mb-3">
                                 <label htmlFor='correo electronico' className="form-label">Correo</label>
-                                <input required type="email" name="Correo" className="LoginInputs" id="correo electronico" placeholder="Constraseña" />
+                                <input required type="email" name="Correo" className="LoginInputs" id="correo electronico" placeholder="Correo Electronico" />
                             </div>
                             <br />
                             <div className="mb-3">

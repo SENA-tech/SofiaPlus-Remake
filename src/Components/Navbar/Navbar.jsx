@@ -8,7 +8,7 @@ import './navbar.css'
 
 export default function Navbar() {
 
-    const [styled, setStyled] = useState(false)
+    const [styled, setStyled] = useState(false);
 
     const visible = () => setStyled(!styled);
 

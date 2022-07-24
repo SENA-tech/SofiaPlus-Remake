@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 //Data
 import { mods, FlechaDown, FlechaAyuda, help, Banner } from '../data';
@@ -19,11 +20,13 @@ export default function BodyPrincipal() {
                             </h3>
                         </div>
                         <div id="boton">
-                            <button>
-                                <img src={FlechaDown} width="25px" />
-                                <h1>Busque la modalidad que prefiera</h1>
-                                <img src={FlechaDown} width="25px" />
-                            </button>
+                            <Link id='boton-link' to='/search'>
+                                <button>
+                                    <img src={FlechaDown} width="25px" />
+                                    <h1>Busque la modalidad que prefiera</h1>
+                                    <img src={FlechaDown} width="25px" />
+                                </button>
+                            </Link>
                         </div>
                     </div>
                     <div className="img">
@@ -46,7 +49,7 @@ export default function BodyPrincipal() {
                         </div>
                     </div>
                 </article>
-                <hr className='hr'/><br /><br />
+                <hr className='hr' /><br /><br />
                 <h1 id='Anuncements'>Anuncios</h1>
                 <article className="anun">
                     <div className="anuncios">

@@ -130,6 +130,10 @@ section article {
     justify-content: center;
 }
 
+#boton-link {
+    text-decoration: none;
+}
+
 #conten-txt {
     display: block;
     flex-direction: column;
@@ -305,7 +309,6 @@ h1 {
 
 .anuncios:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-    transform: translateY(2%);
 }
 
 .cards-ayuda {
@@ -340,7 +343,6 @@ h1 {
 
 .cards-ayuda-1:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-    transform: translateY(-2%);
 }
 
 .cards-ayuda-1 img {

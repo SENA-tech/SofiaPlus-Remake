@@ -2,13 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 //Components
-import Home from './Routes/Home/Home'
-import Navbar from './Components/Navbar/Navbar';
-import Login from './Components/Login/LoginForm';
-import Footer from './Components/Footer/Footer';
-import About from './Routes/About/About';
-import Suport from './Routes/Suport/Suport';
-import RegisterForm from './Components/Register/register';
+import { About, Classmates, Error404, Footer, Home, Login, Navbar, RegisterForm, Suport } from './Data';
 
 export default function App() {
 
@@ -23,6 +17,8 @@ export default function App() {
         </Route >
         <Route path='/about' element={<About />} />
         <Route path='/support' element={<Suport />} />
+        <Route path='/search' element={<Classmates />}/>
+        <Route path='*' element={<Error404 />}/>
       </Routes >
       <Footer />
     </div>
