@@ -19,6 +19,7 @@ export default function Home() {
                     <Body1 />
                     <Body2 />
                 </div>
+                <hr className='hr'/>
                 <div className="homeSF-2">
                     <Body />
                 </div>

@@ -29,39 +29,42 @@ main {
 .body-titles {
     font-weight: bold;
     color: #11383f;
-    font-size: 2.45rem;
-}
-
-.title-h2 {
-    font-size: 1.90rem;
+    font-size: 2.2rem;
 }
 
 #body-textlorem {
-    font-size: large;
+    font-size: 1.2rem;
     padding: 35px;
 }
 
 #body-information {
+    font-family: Helvetica, sans-serif;
     color: #000;
+    font-size: 1rem;
     text-decoration: none;
     margin: 20px;
-    font-size: larger;
     padding: 10px 55px 10px 55px;
-    background: #20a6bc;
+    background: #30a5bb;
     border-radius: 25px;
     border: solid 1px #217a89;
+    transition: all ease 0.2s;
 }
 
 #body-img1 {
     z-index: 1;
-    width: 300px;
-    height: 353px;
+    width: 337px;
+    height: 390px;
 }
 
 /*Body*/
 
+.hr {
+    background-color: #000;
+    height: 2px;
+}
+
 .contenedor {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: block;
 }
@@ -76,6 +79,8 @@ section article {
 .texto {
     margin: 30px 0;
     font-size: 30px;
+    text-align: center;
+    justify-content: center;
 }
 
 .img {
@@ -83,31 +88,31 @@ section article {
     display: flex;
     flex-direction: row;
     text-align: center;
+    text-align: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
     /* efectos */
 }
 
 .texto h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin: 10px;
-    text-align: left;
     /* colores */
-    color: #30a5bb;
-    text-shadow: 3px 2px 1px #10373e;
-    cursor: context-menu;
+    color: #11383f;
 }
 
-.texto h2 {
-    font-size: 1.5rem;
+.texto h3 {
+    font-size: 1.2rem;
     margin: 20px 30px;
     user-select: none;
-    text-align: initial;
     /* colores */
-    background-color: #ccc;
-    background: linear-gradient(#10373e, #30a5bb);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: #000;
+}
+
+#Anuncements {
+    color: #11383f;
+    text-align: center;
+    font-size: 2.2rem;
 }
 
 #boton {
@@ -128,26 +133,24 @@ section article {
 #boton button {
     /* texto */
     font-size: 1rem;
-    font-family: helvetica bold, sans-serif;
     padding: 10px 20px;
     /* color */
     background-color: #30a5bb;
-    color: #10373e;
+    color: #000;
     /* organizacion */
     display: flex;
     align-items: center;
     /* borde */
-    border: #10373e 1.5px solid;
+    border: #217a89 1px solid;
     border-radius: 30px;
     transition: all 0.2s ease;
 }
 
-#boton button:hover {
-    color: #10373e;
+#boton button:hover, #body-information:hover {
+    color: #000;
     background-color: #fff;
-    border: #10373e 1.5px solid;
+    border: #217a89 1px solid;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
 }
 
 #boton button img,
@@ -303,15 +306,17 @@ h1 {
     display: flex;
     justify-content: center;
     max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .cards-ayuda-1 {
     padding: 10px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     width: 100%;
     margin: 20px;
     max-width: 300px;

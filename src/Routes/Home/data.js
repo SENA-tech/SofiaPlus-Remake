@@ -9,9 +9,9 @@ import Mod5 from './Import/img/img-2/car5.png';
 import Banner from './Import/img-anuncios/1.png';
 
 //Help
-import Ayuda1 from './Import/img-anuncios/img (1).png';
-import Ayuda2 from './Import/img-anuncios/img (2).png';
-import Ayuda3 from './Import/img-anuncios/img (3).png';
+import Ayuda1 from './Import/img-anuncios/img1.png';
+import Ayuda2 from './Import/img-anuncios/img2.png';
+import Ayuda3 from './Import/img-anuncios/img3.png';
 
 //Flechas
 import FlechaAyuda from './Import/img-anuncios/flecha.png';
@@ -45,6 +45,23 @@ const mods = [
     }
 ]
 
+const help = [
+    {
+        title: 'Programa de Formacion',
+        description: 'Verifique si se encuentra inscrito',
+        img: Ayuda1
+    },
+    {
+        title: 'Ayuda y Guia',
+        description: 'Encuentre soluciones a las dudas que tenga sobre SofiaPlus Remake',
+        img: Ayuda2
+    },
+    {
+        title: 'Mas Informacion',
+        description: 'Encuentre nuestra guia aqui',
+        img: Ayuda3
+    }
+]
 /*
 {
         banner: Banner
@@ -57,4 +74,4 @@ const mods = [
     }
 */
 
-export { mods, FlechaDown }
+export { mods, FlechaDown, FlechaAyuda, Banner, help }
