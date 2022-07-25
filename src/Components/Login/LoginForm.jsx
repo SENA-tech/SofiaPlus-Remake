@@ -8,7 +8,6 @@ export default function LoginForm() {
 
     const [user, setUser] = useState('');
     const [password, setPassword] = useState('');
-    const [log, setLog] = useState(false);
 
     const inputUser = (event) => {
         setUser(event.target.value);
@@ -20,9 +19,7 @@ export default function LoginForm() {
 
     const Login = () => {
 
-        setLog(!log);
-
-        fetch('http://localhost:4000/',
+        fetch('https://SofiaPlus-API.11-cardozo-joan.repl.co',
             {
                 method: "PUT",
                 headers: {
