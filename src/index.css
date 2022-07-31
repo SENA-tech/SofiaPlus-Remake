@@ -3,3 +3,21 @@ body {
     padding: 0;
     font-family: Helvetica, sans-serif;
 }
+
+::-webkit-scrollbar {
+    width: 15px;
+    border: none;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #4dad33;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #37ff00;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}

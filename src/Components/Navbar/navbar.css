@@ -8,12 +8,13 @@ nav,
 }
 
 .navSF-Base {
-    background: #52952e;
+    background: #4dad33;
     width: 100%;
     height: 20%;
     display: grid;
     grid-template-areas: "n01 n02 n02 n03";
     align-items: center;
+    border: solid 1.5px #4b7f30;
 }
 
 #logo-Nav {
@@ -54,12 +55,12 @@ nav,
 
 .navSF-Base-Search-container {
     width: 40%;
-    background: #4dad33;
+    background: #fff;
     border-radius: 10px;
-    outline: 3px #282828 solid;
+    outline: 1.5px #52952e solid;
 }
 
-.navSF-Base-Search-container:hover {
+.navSF-Base-Search-container:hover, #searcher:focus{
     outline: 3px #000000 solid;
 }
 
@@ -95,7 +96,7 @@ button {
 .navSF-Options {
     display: block;
     border-radius: 10px;
-    border: solid 3px #4b7f30;
+    border: solid 1.5px #4b7f30;
     font-size: x-large;
     position: absolute;
     top: 110%;

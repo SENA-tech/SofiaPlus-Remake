@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     margin: 0;
     padding: 0;
@@ -52,6 +52,11 @@
 .col-md-8 {
     border: 1px #757575 solid;
     border-radius: 10px;
+}
+
+.mb-3 {
+    display: flex;
+    flex-direction: column;
 }
 
 .btn-primary {

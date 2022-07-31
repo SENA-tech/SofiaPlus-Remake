@@ -1,0 +1,140 @@
+.contenedor-cursos h2,
+h4 {
+  color: #000000;
+}
+.contenedor-cursos p {
+  color: #10373e;
+}
+.contenedor-cursos {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  justify-content: center;
+  height: 100vh;
+  padding: 0 20px;
+
+}
+.contenedor-card-cursos {
+  display: flex;
+  margin: 10px;
+  width: 550px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+.contenedor-card-cursos:hover{
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.4);
+}
+.header-cursos {
+  border-right: 1px solid #10373e ;
+  display: flex;
+  flex-direction: column;
+}
+.descripcion-cursos {
+  background: #fbfbfb;
+  border-radius: 6px;
+}
+.descripcion-cursos,
+.header-cursos {
+  padding: 20px;
+  text-align: center;
+}
+
+.header-cursos a {
+  position: relative;
+  display: block;
+}
+.header-cursos img {
+  border-radius: 0%;
+}
+.red {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /* color */
+  box-shadow: 0 0px 10px 6px rgba(0, 0, 0, 0.2);
+  margin: 30px 30px;
+  transition: 0.2s ease;
+  cursor: auto;
+}
+
+.red:hover {
+  box-shadow: 0 0px 20px 6px rgba(12, 129, 6, 0.4);
+}
+.red img {
+  width: 180px;
+}
+.header-cursos h2 {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #4dad33;
+  transition: 0.2s;
+  box-shadow: 0 0px 0 0 rgba(0, 0, 0, 0);
+  cursor: default;
+}
+.header-cursos:hover h2 {
+  color: #217a89;
+  /* background-color: rgba(21, 155, 30, 0.4); */
+}
+.header-cursos h4 {
+  margin-bottom: 30px;
+}
+.descripcion-cursos {
+  position: relative;
+}
+.txt {
+  display: flex;
+  align-items: flex-start;
+  text-align: initial;
+  flex-direction: column;
+  margin: 20px;
+}
+.txt p,
+h4 {
+  margin: 4px;
+  cursor: default;
+}
+.mas-informacion {
+  margin: 0 0 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 40px;
+}
+.mas-informacion a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+.mas-informacion button {
+  width: auto;
+  height: auto;
+  border: 2px solid #1f4515;
+  border-radius: 8px;
+  padding: 2px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4dad33;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+.mas-informacion:hover a {
+  color: #1f4515;
+}
+.mas-informacion:hover button {
+  border: 2px solid #4dad33;
+  background-color: #fff;
+  box-shadow: 0 0px 10px 8px rgba(34, 221, 28, 0.2);
+}
