@@ -7,13 +7,11 @@ h4 {
 }
 .contenedor-cursos {
   width: 95%;
-  margin: 0 auto;
+  margin: 10% auto 5%;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  
+  flex-wrap: wrap; 
   justify-content: center;
-  height: 100vh;
   padding: 0 20px;
 
 }
@@ -41,7 +39,7 @@ h4 {
 }
 .descripcion-cursos,
 .header-cursos {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -98,18 +96,18 @@ h4 {
   align-items: flex-start;
   text-align: initial;
   flex-direction: column;
-  margin: 20px;
+  margin: 30px 0 0 0;
 }
 .txt p,
 h4 {
-  margin: 4px;
+  margin: 2px;
   cursor: default;
 }
 .mas-informacion {
   margin: 0 0 10px 0;
   display: flex;
   justify-content: flex-end;
-  margin: 10px 40px;
+  margin: 0px 30px 5px 0;
 }
 .mas-informacion a {
   color: #fff;
@@ -137,4 +135,26 @@ h4 {
   border: 2px solid #4dad33;
   background-color: #fff;
   box-shadow: 0 0px 10px 8px rgba(34, 221, 28, 0.2);
+}
+
+@media screen and (max-width: 680px) {
+
+  .contenedor-cursos {
+    margin: 25% auto 5%;
+  }
+
+  .contenedor-card-cursos {
+    flex-direction: column;
+  }
+
+  .red {
+    margin: 0 auto;
+  }
+
+  .mas-informacion {
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+
 }
