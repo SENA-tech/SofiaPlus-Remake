@@ -35,7 +35,7 @@ export default function useFecth() {
 
         console.log('Login');
 
-        fetch('http://localhost:4000/', {
+        fetch('https://SofiaPlus-API.11-cardozo-joan.repl.co', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ export default function useFecth() {
 
     const register = () => {
 
-        fetch('http://localhost:4000/', {
+        fetch('https://SofiaPlus-API.11-cardozo-joan.repl.co', {
             method: "PUT",
             headers: {
                 'Content-Type': 'application/json',
