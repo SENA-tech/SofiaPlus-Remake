@@ -11,10 +11,10 @@ export default function SearchFrom() {
         <div className='FormSearch'>
             <label id='labelSearch' htmlFor="Searcher">Buscador</label>
             <input autoComplete='off' type='search' id='Searcher' />
-            <Link onClick={() => required()} to='/search'>
-                <button type="submit" id='btn-searcher'>
+            <Link to='search'>
+                <div id='btn-searcher'>
                     <img src={SearchLogo} alt="search buttom" height={30} />
-                </button>
+                </div>
             </Link>
         </div>
 
