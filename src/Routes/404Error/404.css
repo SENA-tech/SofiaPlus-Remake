@@ -1,0 +1,56 @@
+.ClassmatesSF {
+    height: auto;
+    margin: 9.3% auto 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-404{
+    /* display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* alineacion */
+    padding: 40px;
+    /* color */
+    width: 80%;
+    height: 50%;
+}
+
+.er4{
+    margin: 20px;
+    font-size: 80px;
+    color: #fff;
+    box-shadow: 3px 5px 8px 2px rgb(0 0 0 / 70%);
+    padding: 10px 40px;
+    background: #5eb319;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.er4:hover{
+    color: #fff;
+    box-shadow: 3px 5px 8px 2px rgba(24, 121, 19, 0.8);
+    background: #5eb319;
+    transform: scale(1.1);
+
+}
+/* 37ff00 
+rgba(55, 255, 0, 1)*/
+.txt{
+    font-size: 20px;
+    margin: 15px;
+    font-weight: lighter;
+    text-align: center;
+
+    margin: 10px;
+    /* color-cartel */
+    box-shadow: 0 5px 5px rgb(0 0 0 / 40%);
+    padding: 10px 40px;
+    background: #fff;
+    border-radius: 10px;
+    border:1px solid #217a89;
+    
+    
+}
