@@ -35,7 +35,7 @@ export default function useFecth() {
 
         console.log('Login');
 
-        fetch('https://SofiaPlus-API.11-cardozo-joan.repl.co', {
+        fetch('https://main.d11ipvrcmmgow2.amplifyapp.com/', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ export default function useFecth() {
 
     const register = () => {
 
-        fetch('https://SofiaPlus-API.11-cardozo-joan.repl.co', {
+        fetch('https://main.d11ipvrcmmgow2.amplifyapp.com/', {
             method: "PUT",
             headers: {
                 'Content-Type': 'application/json',
