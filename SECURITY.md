@@ -4,7 +4,7 @@
 
 | Version | Supported          | Estado       |
 | :---: | :---: | :---: |
-| 1.x.x   | :white_check_mark: | with support |
+| 1.x.x   | ✅ | with support |
 | 2.x.x   | 📪                 |   on hold    |
 
 ## versions with / without support, to maintain a level of security about which versions will have updates of:
