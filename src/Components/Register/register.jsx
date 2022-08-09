@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useFecth from '../../Hooks/useFecth';
+import UserAouth from '../../Services/UserAouth';
 
 //CSS
 import './register.css'
 
 export default function RegisterForm() {
 
-    const { register, changeType, inputPass, inputUser, inputApellido, inputNombre } = useFecth();
+    const { register, changeType, inputPass, inputUser, inputApellido, inputNombre } = UserAouth();
 
     return (
 
