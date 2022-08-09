@@ -14,7 +14,7 @@ export default function Body01() {
                 <h1 className='body-titles'>El portal de oferta educativa SENA</h1>
                 <h3 id='body-textlorem'>Recreacion del SENA Sofia Plus, pensada para reemplazar el actual SofiaPlus, Dando un nuevo diseÑo, sistema, y accesibilidad
                 </h3>
-                <h1>
+                <h1 className="text-h1">
                     <Link to='/about' id='body-information'>
                         <img className='img-link-about' src={FlechaDown} width="25px" />
                         Mas Informacion

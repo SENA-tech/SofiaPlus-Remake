@@ -5,6 +5,11 @@ main {
     background: #fff;
 }
 
+.text-h1 {
+    justify-content: center;
+    display: flex;
+}
+
 .homeSF-1 {
     display: flex;
 }
@@ -42,6 +47,7 @@ main {
 }
 
 #body-information {
+    max-width: 350px;
     align-items: center;
     justify-content: center;
     text-align: center;
