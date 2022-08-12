@@ -7,6 +7,7 @@ import Suport from './Routes/Suport/Suport';
 import RegisterForm from './Components/Register/register';
 import Classmates from './Routes/Class/Class';
 import Error404 from './Routes/404Error/404';
+import User from './Routes/User/User';
 
 export {
     Home,
@@ -17,5 +18,6 @@ export {
     Suport,
     RegisterForm,
     Classmates,
-    Error404
+    Error404,
+    User
 }
