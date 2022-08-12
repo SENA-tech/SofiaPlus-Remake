@@ -1,8 +1,10 @@
+let local = JSON.parse(window.localStorage.getItem('SessionID'));
+
 const login = [
     {
         type: "Profile",
         name: "Perfil",
-        url: "/profile"
+        url: `/profile/${local._key}`
     },
     {
         type: "Support",

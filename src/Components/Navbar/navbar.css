@@ -51,6 +51,11 @@ nav,
     grid-area: n03;
 }
 
+.navSF-Base-User-Data {
+    margin: 0 15px 0 0;
+    color: #fff;
+}
+
 /*---------Search Form----------*/
 
 .navSF-Base-Search-container {

@@ -48,7 +48,7 @@ export default function useAouth() {
         }).then(res => res.json()).then(res => {
             res.validate === true
                 ? //If
-                window.localStorage.setItem('SessionID', User)
+                window.localStorage.setItem('SessionID', JSON.stringify(res))
                 : //Else
                 setResponce(false)
         }).catch(e => console.log(e));
