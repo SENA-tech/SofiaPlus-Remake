@@ -35,7 +35,7 @@ export default function useAouth() {
 
         console.log('Login');
 
-        fetch('http://localhost:5000/api/user/aouth', {
+        fetch('https://SofiaPlus-API.11-cardozo-joan.repl.co/api/user/aouth', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ export default function useAouth() {
 
     const register = () => {
 
-        fetch('http://localhost:5000/api/user/register', {
+        fetch('https://SofiaPlus-API.11-cardozo-joan.repl.co/api/user/register', {
             method: "PUT",
             headers: {
                 'Content-Type': 'application/json',
