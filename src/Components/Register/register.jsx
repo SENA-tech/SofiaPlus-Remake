@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import UserAouth from '../../Services/UserAouth';
+
+//Custom Hooks
+import useAouth from '../../Hooks/UserAouth';
 
 //CSS
 import './register.css'
 
 export default function RegisterForm() {
 
-    const { register, changeType, inputPass, inputUser, inputApellido, inputNombre } = UserAouth();
+    const { register, changeType, inputPass, inputUser, inputApellido, inputNombre } = useAouth();
 
     return (
 

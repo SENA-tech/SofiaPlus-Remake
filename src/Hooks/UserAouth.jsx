@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function UserAouth() {
+export default function useAouth() {
 
     const [Type, setType] = useState('Ti')
     const [User, setUser] = useState('');

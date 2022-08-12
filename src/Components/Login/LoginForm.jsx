@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 //Custom Hooks
-import UserAouth from '../../Services/UserAouth';
+import useAouth from '../../Hooks/UserAouth';
+
 
 //CSS
 import './Login.css'
 
 export default function LoginForm() {
 
-    const { login, changeType, inputPass, inputUser } = UserAouth();
+    const { login, changeType, inputPass, inputUser } = useAouth();
 
     return (
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 //Data
-import UserLogo from '../Import/UserLogo.png'
+import UserLogo from '../Import/UserLogo.png';
 
 export default function NavUser({ visible }) {
 

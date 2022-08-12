@@ -1,6 +1,6 @@
 import React from 'react';
 
-import LaretalImg from '../Import/lateral.png';
+import LaretalImg from '../Import/imagensofia.webp';
 
 export default function Body02() {
 
