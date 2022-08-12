@@ -4,7 +4,7 @@ const login = [
     {
         type: "Profile",
         name: "Perfil",
-        url: `/profile/${local._key}`
+        url: `/profile/${ !local ? ' ' : local._key }}`
     },
     {
         type: "Support",
