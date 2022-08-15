@@ -1,0 +1,178 @@
+#SofiaPlus-User {
+    margin: 5% 0 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.SofiaPlus-User-Sec {
+    border: 1px solid #4b7f30;
+    border-radius: 10px;
+    margin: 50px;
+    background: #ffffff;
+    box-shadow: 5px 5px 20px rgb(0 0 0 / 50%);
+}
+
+.Sec1 {
+    width: 30%;
+}
+
+.Sec2 {
+    width: 70%;
+    padding: 20px;
+}
+
+.Sofiaplus-User-s1-profileData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    color: #000000;
+}
+
+.Sofiaplus-User-s1-profileData-img img {
+    transition: all 0.2s;
+    border-radius: 50%;
+}
+
+.Sofiaplus-User-s1-profileData-identifier {
+    width: 100%;
+    margin: 0px 0;
+    color: #696969;
+}
+
+.Sofiaplus-User-s1-profileData-identifier h3 {
+    border: 1px solid #4b7f30;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.Sofiaplus-User-s1-profileData-name {
+
+    width: 100%;
+}
+
+hr {
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #000000;
+}
+
+/*Courses Section*/
+.Sofiaplus-User-s2-Courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+}
+
+.Sofiaplus-User-s2-Courses-Title {
+    display: flex;
+    width: 100%;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.Sofiaplus-User-s2-Courses-Title h1 {
+    margin: 5px 0;
+}
+
+.Sofiaplus-User-s2-Courses-Content {
+    margin: 15px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+}
+
+.Sofiaplus-User-s2-Courses-Element {
+    transition: all 0.2s;
+    border-radius: 10px;
+    padding: 10px 25px;
+    outline: #000000 solid 2px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    color: #000000;
+}
+
+.Sofiaplus-User-s2-Courses-Element:hover,
+.Sofiaplus-User-s1-profileData-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px #000000;
+}
+
+.Sofiaplus-User-s2-Courses-Element img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.Sofiaplus-User-s2-Courses-Element h3 {
+    margin: 0 0 5px 0;
+}
+
+@media screen and (max-width: 680px) {
+    #SofiaPlus-User {
+        margin: 20% 5% 0;
+        flex-direction: column;
+    }
+    .SofiaPlus-User-Sec {
+        width: 100%;
+        margin: 25px 0;
+    }
+    .Sec1 {
+        width: 100%;
+    }
+    .Sec2 {
+        width: 100%;
+    }
+    .Sofiaplus-User-s1-profileData {
+        margin: 20px;
+    }
+    .Sofiaplus-User-s1-profileData-img img {
+        width: 100px;
+        height: 100px;
+    }
+    .Sofiaplus-User-s1-profileData-identifier h3 {
+        width: 100%;
+    }
+    .Sofiaplus-User-s1-profileData-name {
+        width: 100%;
+    }
+    .Sofiaplus-User-s2-Courses {
+        width: 100%;
+    }
+    .Sofiaplus-User-s2-Courses-Title {
+        width: 100%;
+    }
+    .Sofiaplus-User-s2-Courses-Title h1 {
+        margin: 5px 0;
+    }
+    .Sofiaplus-User-s2-Courses-Content {
+        flex-direction: column;
+        width: 100%;
+    }
+    .Sofiaplus-User-s2-Courses-Element {
+        margin: 15px 0;
+        width: 100%;
+    }
+    .Sofiaplus-User-s2-Courses-Element img {
+        width: 100px;
+        height: 100px;
+    }
+    .Sofiaplus-User-s2-Courses-Element h3 {
+        margin: 0 0 5px 0;
+    }
+}

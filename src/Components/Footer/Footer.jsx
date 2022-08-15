@@ -20,7 +20,7 @@ export default function Footer() {
                             <h1 id="lsen">SENA</h1>
                         </div>
 
-                        <hr />
+                        <hr className='hrFooter' />
 
                         <p>
                             Esta compañia se dedica a la venta de software integrado con un

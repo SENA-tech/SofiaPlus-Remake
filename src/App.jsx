@@ -27,9 +27,7 @@ export default function App() {
         <Route path='/about' element={<About />} />
         <Route path='/support' element={<Suport />} />
         <Route path='/search' element={<Classmates />} />
-        <Route path='/profile'>
-          <Route path=':userId' element={<User />} />
-        </Route>
+        <Route path='/profile/:userId' element={<User />} />
         <Route path='*' element={<Error404 />} />
       </Routes >
       <Footer />

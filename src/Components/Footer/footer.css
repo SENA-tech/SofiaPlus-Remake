@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
 }
-hr{
+.hrFooter{
     margin-top: 50px;
     background-color: white;
     height: 2px;
