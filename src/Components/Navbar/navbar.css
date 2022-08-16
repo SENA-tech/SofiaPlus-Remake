@@ -24,6 +24,7 @@ nav,
 .navSF-Base-Logo,
 .navSF-Base-Search,
 .navSF-Base-User,
+.navSF-Base-User-Da,
 .navSF-Base-Search-container,
 .FormSearch,
 #btn-searcher {
@@ -65,7 +66,8 @@ nav,
     outline: 1.5px #52952e solid;
 }
 
-.navSF-Base-Search-container:hover, #searcher:focus{
+.navSF-Base-Search-container:hover,
+#searcher:focus {
     outline: 3px #000000 solid;
 }
 
@@ -141,4 +143,52 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+
+    .navSF-Base-User-Data h3 {
+        display: none;
+    }
+
+    .navSF-Base-Search {
+        z-index: 5;
+        position: absolute;
+        width: 100%;
+        top: 130%;
+    }
+
+    .navSF-Options {
+        height: 500%;
+    }
+
+    .navSF-Options-selects ul {
+        margin: 15% 0;
+        flex-direction: column;
+    }
+
+    .navSF-Options-selects ul li {
+        padding: 10px 0;
+        width: 90%;
+        margin: 15px auto;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .navSF-Options {
+        height: 500%;
+    }
+
+    .navSF-Options-selects ul {
+        margin: 25% 0;
+        flex-direction: column;
+    }
+
+    .navSF-Options-selects ul li {
+        padding: 10px 0;
+        width: 90%;
+        margin: 15px auto;
+    }
 }

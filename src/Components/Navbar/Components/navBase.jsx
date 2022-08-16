@@ -5,11 +5,11 @@ import NavbarSearch from './navSearch';
 import NavbarUser from './navUser';
 import Logo from './navLogo';
 
-export default function NavBase({ visible }) {
+export default function NavBase({ visible, styled }) {
     return (
         <div className="navSF-Base">
             <Logo />
-            <NavbarSearch />
+            <NavbarSearch styled={styled} visible={visible}/>
             <NavbarUser visible={visible}/>
         </div>
     );

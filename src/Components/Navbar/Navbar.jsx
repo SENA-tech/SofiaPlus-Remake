@@ -16,7 +16,7 @@ export default function Navbar() {
 
         <nav>
             <div className="navSF" >
-                <NavbarBase visible={visible}/>
+                <NavbarBase styled={styled} visible={visible}/>
                 <div className="navSF-Opt" style={{ display: styled === false ? 'none' : 'flex'}}>
                     <NavbarOptions setter={visible}/>
                 </div>

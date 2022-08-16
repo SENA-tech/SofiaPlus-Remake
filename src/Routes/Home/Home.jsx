@@ -15,11 +15,13 @@ export default function Home() {
 
         <div>
             <main>
-                <div className="homeSF-1">
-                    <Body1 />
-                    <Body2 />
-                </div>
-                <hr className='hr'/>
+                <header>
+                    <div className="homeSF-1">
+                        <Body1 />
+                        <Body2 />
+                    </div>
+                </header>
+                <hr className='hr' />
                 <div className="homeSF-2">
                     <Body />
                 </div>
