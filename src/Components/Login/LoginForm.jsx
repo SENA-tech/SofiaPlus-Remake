@@ -42,7 +42,7 @@ export default function LoginForm() {
                                 <input onClick={() => login()} type="submit" value="Iniciar Sesion" className="btn-primary" />
                             </Link>
                             <br /><br />
-                            <small>Si no tienes usuario <Link to='/register'>Registrate</Link></small>
+                            <small>Si no tienes usuario <Link to='/register' className='ancor'>Registrate</Link></small>
                         </div>
                     </div>
                 </div>

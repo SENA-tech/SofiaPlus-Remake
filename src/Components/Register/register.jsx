@@ -51,7 +51,7 @@ export default function RegisterForm() {
                                 <input onClick={() => register()} type="submit" value="Registrate" className="btn-primary" />
                             </Link>
                             <br /><br />
-                            <small>Si ya tienes un usuario <Link to='/login'>Inicia Sesion</Link></small>
+                            <small>Si ya tienes un usuario <Link to='/login' className='ancor'>Inicia Sesion</Link></small>
                         </div>
                     </div>
                 </div>
