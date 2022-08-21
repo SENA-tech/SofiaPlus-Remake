@@ -21,3 +21,15 @@ body {
 ::-webkit-scrollbar-corner {
     background: transparent;
 }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.ancor {
+    text-decoration: auto;
+    color: #52952e;
+    font-size: 16px;
+    font-weight: 400;
+}
