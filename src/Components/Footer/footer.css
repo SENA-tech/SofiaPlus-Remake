@@ -67,7 +67,15 @@ footer{
 .row-label{
     margin-top: 10px;
     margin-left: 20px;
+}
+
+.row-label a {
     color: #767676;
+    text-decoration: none;
+}
+
+.row-label a:hover{
+    color: #343434;
 }
 
 .colum3{
@@ -82,6 +90,7 @@ footer{
     margin-top: 20px;
     display: flex;
     color: #767676;
+    align-items: center;
 }
 .all-sen {
     align-items: center;

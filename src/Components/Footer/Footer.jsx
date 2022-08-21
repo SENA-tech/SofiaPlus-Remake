@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Routes, useLocation, Link } from 'react-router-dom';
 
 //Css
 import './footer.css'
@@ -23,10 +24,7 @@ export default function Footer() {
                         <hr className='hrFooter' />
 
                         <p>
-                            Esta compañia se dedica a la venta de software integrado con un
-                            conjunto de cosas que no se lo que estoy escribiendo, este texto
-                            es solo para llenara informacion en el cuadro de informacion de la
-                            compañia.
+                            Pagina web orientada a la educación de los colombianos para estudios tecnicos y tecnologicos en todo Colombia. ( Pagina no oficial )
                         </p>
                     </div>
 
@@ -35,19 +33,19 @@ export default function Footer() {
 
                         <div className="row2">
                             <img src={imgs.facebook} alt='logosSena' />
-                            <label className='row-label'>Facebook</label>
+                            <label className='row-label'><a href="https://www.facebook.com/SENA" target="_blank" rel="SENA facebook">Facebook</a></label>
                         </div>
                         <div className="row2">
                             <img src={imgs.twitter} alt='logosSena' />
-                            <label className='row-label'>Twitter</label>
+                            <label className='row-label'><a href="https://twitter.com/SENAComunica" target="_blank" rel="SENA twitter">Twitter</a></label>
                         </div>
                         <div className="row2">
                             <img src={imgs.instagram} alt='logosSena' />
-                            <label className='row-label'>Instagram</label>
+                            <label className='row-label'><a href="https://www.instagram.com/senacomunica/?hl=es" target="_blank" rel="SENA twitter">Instagram</a></label>
                         </div>
                         <div className="row2">
                             <img src={imgs.youtube} alt='logosSena' />
-                            <label className='row-label'>youtube</label>
+                            <label className='row-label'><a href="https://www.youtube.com/channel/UCt5y885UFplu2okY39TBwCg" target="_blank" rel="SENA youtube">Youtube</a></label>
                         </div>
                     </div>
 
@@ -56,19 +54,17 @@ export default function Footer() {
 
                         <div className="row2">
                             <img src={imgs.logoSena} alt='logosSena' />
-                            <label className='row-label'>
-                                centro de materiales y ensayos|Sonia ortega|Joan cardozo
-                            </label>
+                            <label className='row-label'><Link to='team'>Equipo de desarrollo</Link></label>
                         </div>
 
                         <div className="row2">
                             <img src={imgs.logoSena} alt='logosSena' />
-                            <label className='row-label'>+57 ejemplo numero</label>
+                            <label className='row-label'>+57 320 9172705</label>
                         </div>
 
                         <div className="row2">
                             <img src={imgs.logoSena} alt='logosSena' />
-                            <label className='row-label'>Sena</label>
+                            <label className='row-label'><a href="https://www.sena.edu.co/es-co/Paginas/default.aspx" target="_blank" rel="noopener noreferrer">SENA Official</a></label>
                         </div>
                     </div>
                 </div>

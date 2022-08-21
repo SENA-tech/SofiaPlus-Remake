@@ -4,6 +4,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 //Components
 import { About, Classmates, Error404, Footer, Home, Login, Navbar, RegisterForm, Suport, User } from './Data';
 import Logout from './Routes/Logout/Logout';
+import TeamInfo from './Routes/TeamInfo/Teaminfo';
 
 export default function App() {
 
@@ -29,6 +30,7 @@ export default function App() {
         <Route path='/search' element={<Classmates />} />
         <Route path='/profile/:userId' element={<User />} />
         <Route path='*' element={<Error404 />} />
+        <Route path='/team' element={<TeamInfo />}/>
       </Routes >
       <Footer />
     </div>
