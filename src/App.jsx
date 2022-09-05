@@ -2,9 +2,8 @@ import React, { useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
 //Components
-import { About, Classmates, Error404, Footer, Home, Login, Navbar, RegisterForm, Suport, User } from './Data';
-import Logout from './Routes/Logout/Logout';
-import TeamInfo from './Routes/TeamInfo/Teaminfo';
+import { About, Classmates, Error404, Footer, Home, Login, Navbar, RegisterForm, Suport, User, Logout, TeamInfo } from './Data';
+
 
 export default function App() {
 

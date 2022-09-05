@@ -8,6 +8,8 @@ import RegisterForm from './Components/Register/register';
 import Classmates from './Routes/Class/Class';
 import Error404 from './Routes/404Error/404';
 import User from './Routes/User/User';
+import Logout from './Routes/Logout/Logout';
+import TeamInfo from './Routes/TeamInfo/Teaminfo';
 
 export {
     Home,
@@ -19,5 +21,7 @@ export {
     RegisterForm,
     Classmates,
     Error404,
-    User
+    User,
+    Logout,
+    TeamInfo
 }
