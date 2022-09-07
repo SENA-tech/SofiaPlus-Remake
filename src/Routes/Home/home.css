@@ -11,6 +11,7 @@ main {
 }
 
 .homeSF-1 {
+    margin: 0 10%;
     display: flex;
 }
 
@@ -47,6 +48,7 @@ main {
 }
 
 #body-information {
+    display: flex;
     max-width: 350px;
     align-items: center;
     justify-content: center;

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 //Custom Hooks
-import useAouth from '../../Hooks/useAouth';
+import useAouth from '../../Hooks/useAouth.hook';
 
 //CSS
 import './register.css'

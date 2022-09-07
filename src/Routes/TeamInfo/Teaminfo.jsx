@@ -1,51 +1,48 @@
-import React from 'react';
+import React from "react";
 
-import { TeamData } from './data';
+import { TeamData } from "./data";
 
 //css
-import './teaminfo.css';
+import "./teaminfo.css";
 
 export default function TeamInfo() {
-    return (
-        <div className="SF-Teaminfo-Base">
-            <div className="SF-Teaminfo-Base-Title">
-                <h1>Equipo de Desarrollo | Sofia Plus Remake</h1>
+  return (
+    <div className="SF-Teaminfo-Base">
+      <div className="SF-Teaminfo-Base-Title">
+        <h1>Equipo de Desarrollo | Sofia Plus Remake</h1>
+      </div>
+      <hr className="hr" />
+      <div className="SF-Teaminfo-Base-Content">
+        {TeamData.map((data) => {
+          return (
+            <div class="card-press">
+              <div class="head-press">
+                <div class="circle-press"></div>
+                <div class="img-press">
+                  <img
+                    width="500px"
+                    src={data.image}
+                  />
+                </div>
+              </div>
+              <div class="description-press">
+                <h3>{ data.name }</h3>
+                <h4>{ data.main }</h4>
+                <p>
+                  { data.description }
+                </p>
+              </div>
+              <div class="roles-press">
+                <h4>roles</h4>
+                <p> { data.roles } </p>
+              </div>
+              <div class="contact-press">
+                <a href="">contact</a>
+              </div>
             </div>
-            <hr className='hr'/>
-            <div className="SF-Teaminfo-Base-Content">
-                {
-                    TeamData.map(data => {
-                        return (
-                            <div className="SF-Teaminfo-Base-Content-Item" key={ data.id }>
-                                <div className="SF-Teaminfo-Base-Content-Item-Name">
-                                    <h2>{ data.name }</h2>
-                                </div>
-                                <div className="SF-Teaminfo-Base-Content-Item-Img">
-                                    <img src={ data.image } alt="Joan Cardozo" height={200} width={200} />
-                                </div>
-                                <br />
-                                <div className="SF-Teaminfo-Base-Content-Item-Info">
-                                    <p>{ data.description }</p>
-                                </div>
-                                <br />
-                                <div className="SF-Teaminfo-Base-Content-Item-Roles">
-                                    <h3>Roles</h3>
-                                    <br />
-                                    <ul>
-                                        {
-                                            data.roles.map(role => {
-                                                return (
-                                                    <li>{ role }</li>
-                                                )
-                                            })
-                                        }
-                                    </ul>
-                                </div>
-                            </div>
-                        )
-                    })
-                }
-            </div>
-        </div>
-    );
+          );
+        })}
+      </div>
+    </div>
+  );
 }
