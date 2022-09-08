@@ -1,104 +1,45 @@
-import React from 'react';
+import React from "react";
 
-import './class.css'
+//CSS
+import "./class.css";
+
+//Data
+import { data } from "./data";
 
 export default function Classmates() {
-
-    return (
-
-        <div className="contenedor-cursos">
-            <div className="contenedor-card-cursos">
-                <div className="header-cursos">
-                    <div className="red">
-                        <img src="img/27365.png" />
-                    </div>
-                    <h2>Lorem, ipsum.</h2>
-                    <h4>Lorem, ipsum.</h4>
+  return (
+    <div className="contenedor-cursos">
+      {data.map((e) => {
+        return (
+          <div key={e.id} className="contenedor-card-cursos">
+            <div className="header-cursos">
+              <div className="red-2">
+                <div className="red">
+                  <img src={e.img} alt="SENA-clases" />
                 </div>
-                <div className="descripcion-cursos">
-                    <div className="txt">
-                        <h4>Lorem, ipsum.</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, ad.
-                        </p>
-                        <h4>Lorem, ipsum.</h4>
-                        <p>Lorem, ipsum.</p>
-                        <h4>Lorem, ipsum.</h4>
-                        <p>Lorem, ipsum.</p>
-                        <h4>Lorem, ipsum.</h4>
-                        <p>Lorem, ipsum.</p>
-                    </div>
-                    <br />
-                    <div className="mas-informacion">
-                        <button>
-                            <a href="#">Mas Informacion</a>
-                        </button>
-
-                    </div>
-                </div>
+              </div>
+              <h2>{e.nombre}</h2>
+              <h4>{e.numero_ficha}</h4>
             </div>
-            <div className="contenedor-card-cursos">
-                <div className="header-cursos">
-                    <div className="red">
-                        <img src="img/27365.png" />
-                    </div>
-                    <h2>Lorem, ipsum.</h2>
-                    <h4>Lorem, ipsum.</h4>
-                </div>
-                <div className="descripcion-cursos">
-                    <div className="txt">
-                        <h4>Lorem, ipsum.</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, ad.
-                        </p>
-                        <h4>Lorem, ipsum.</h4>
-                        <p>Lorem, ipsum.</p>
-                        <h4>Lorem, ipsum.</h4>
-                        <p>Lorem, ipsum.</p>
-                        <h4>Lorem, ipsum.</h4>
-                        <p>Lorem, ipsum.</p>
-                    </div>
-                    <br />
-                    <div className="mas-informacion">
-                        <button>
-                            <a href="#">Mas Informacion</a>
-                        </button>
-
-                    </div>
-                </div>
+            <div className="descripcion-cursos">
+              <div className="txt">
+                <h4> Modalidad </h4>
+                <p>{e.modalidad}</p>
+                <h4> Duracion </h4>
+                <p>{e.duracion}</p>
+                <h4> Jornada </h4>
+                <p> {e.jornada} </p>
+              </div>
+              <br />
+              <div className="mas-informacion">
+                <button>
+                  <a href="#">Mas Informacion</a>
+                </button>
+              </div>
             </div>
-            <div className="contenedor-card-cursos">
-                <div className="header-cursos">
-                    <div className="red">
-                        <img src="img/27365.png" />
-                    </div>
-                    <h2>Lorem, ipsum.</h2>
-                    <h4>Lorem, ipsum.</h4>
-                </div>
-                <div className="descripcion-cursos">
-                    <div className="txt">
-                        <h4>Lorem, ipsum.</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, ad.
-                        </p>
-                        <h4>Lorem, ipsum.</h4>
-                        <p>Lorem, ipsum.</p>
-                        <h4>Lorem, ipsum.</h4>
-                        <p>Lorem, ipsum.</p>
-                        <h4>Lorem, ipsum.</h4>
-                        <p>Lorem, ipsum.</p>
-                    </div>
-                    <br />
-                    <div className="mas-informacion">
-                        <button>
-                            <a href="#">Mas Informacion</a>
-                        </button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    )
-
+          </div>
+        );
+      })}
+    </div>
+  );
 }

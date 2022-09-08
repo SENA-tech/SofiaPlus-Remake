@@ -10,31 +10,40 @@ h4 {
   margin: 10% auto 5%;
   display: flex;
   align-items: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
   padding: 0 20px;
-
 }
 .contenedor-card-cursos {
+  overflow: hidden;
   display: flex;
   margin: 10px;
-  width: 550px;
+  width: 500px;
   height: auto;
+  flex-direction: row;
+  max-height: 500px;
+  min-height: 350px;
   background-color: #fff;
   border-radius: 6px;
-  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px 2px rgb(0 0 0 / 20%);
   transition: all 0.2s ease;
 }
-.contenedor-card-cursos:hover{
-    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.4);
+.contenedor-card-cursos:hover {
+  box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.4);
 }
 .header-cursos {
-  border-right: 1px solid #10373e ;
+  width: 280px;
+  border-right: 1px solid #10373e;
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
 }
 .descripcion-cursos {
-  background: #fbfbfb;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: column;
+  width: 50%;
   border-radius: 6px;
 }
 .descripcion-cursos,
@@ -53,7 +62,6 @@ h4 {
 .red {
   width: 100px;
   height: 100px;
-  background-color: blue;
   margin: 0 auto;
   overflow: hidden;
   display: flex;
@@ -62,7 +70,7 @@ h4 {
   border-radius: 50%;
   /* color */
   box-shadow: 0 0px 10px 6px rgba(0, 0, 0, 0.2);
-  margin: 30px 30px;
+  margin: 10px auto;
   transition: 0.2s ease;
   cursor: auto;
 }
@@ -71,7 +79,7 @@ h4 {
   box-shadow: 0 0px 20px 6px rgba(12, 129, 6, 0.4);
 }
 .red img {
-  width: 180px;
+  width: 200px;
 }
 .header-cursos h2 {
   font-size: 22px;
@@ -93,8 +101,6 @@ h4 {
 }
 .txt {
   display: flex;
-  align-items: flex-start;
-  text-align: initial;
   flex-direction: column;
   margin: 30px 0 0 0;
 }
@@ -106,8 +112,8 @@ h4 {
 .mas-informacion {
   margin: 0 0 10px 0;
   display: flex;
-  justify-content: flex-end;
-  margin: 0px 30px 5px 0;
+  justify-content: center;
+  margin: 5px 0;
 }
 .mas-informacion a {
   color: #fff;
@@ -138,7 +144,6 @@ h4 {
 }
 
 @media screen and (max-width: 680px) {
-
   .contenedor-cursos {
     margin: 25% auto 5%;
   }
@@ -157,4 +162,24 @@ h4 {
     justify-content: center;
   }
 
+  .contenedor-card-cursos {
+    width: auto;
+    flex-direction: column;
+  }
+
+  .header-cursos {
+    border: none;
+  }
+
+  .descripcion-cursos {
+    width: 100%;
+  }
+
+  .header-cursos h4 {
+    margin: 0;
+  }
+
+  .txt {
+    margin: 0;
+  }
 }

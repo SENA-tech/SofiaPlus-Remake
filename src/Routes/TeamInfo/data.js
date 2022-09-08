@@ -5,7 +5,7 @@ let TeamData = [
         name: "Joan Sebastian Cardozo Salinas",
         description: "Desarrollador Web Junior, Contribuidor del Open Source, apasionado por la tecnología y la programación.",
         main: "Tecnico en Programacion",
-        roles: "FullStack, DBmanager, Project Manager",
+        roles: "FullStack, DBmanager, Manager",
         image: "https://avatars.githubusercontent.com/u/84690368?v=4",
     },
     {
