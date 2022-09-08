@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, Outlet } from "react-router-dom";
 
 //CSS
 import "./class.css";
@@ -32,14 +33,15 @@ export default function Classmates() {
               </div>
               <br />
               <div className="mas-informacion">
-                <button>
-                  <a href="#">Mas Informacion</a>
-                </button>
+                <Link to="about">
+                  <button>Mas Informacion</button>
+                </Link>
               </div>
             </div>
           </div>
         );
       })}
+      <Outlet />
     </div>
   );
 }

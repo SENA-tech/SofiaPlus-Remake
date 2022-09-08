@@ -10,6 +10,7 @@ import Error404 from './Routes/404Error/404';
 import User from './Routes/User/User';
 import Logout from './Routes/Logout/Logout';
 import TeamInfo from './Routes/TeamInfo/Teaminfo';
+import Coursemodal from './Components/CourseAbout/CourseModal.';
 
 export {
     Home,
@@ -23,5 +24,6 @@ export {
     Error404,
     User,
     Logout,
-    TeamInfo
+    TeamInfo,
+    Coursemodal
 }

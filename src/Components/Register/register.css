@@ -24,16 +24,6 @@
     width: 45%;
 }
 
-.ext {
-    cursor: default;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #00000099;
-}
-
 .card-header {
     border-radius: 9px 9px 0 0;
     margin-left: -0.05px;
