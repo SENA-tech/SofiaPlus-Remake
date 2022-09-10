@@ -1,8 +1,11 @@
 import React from "react";
 
+
+import "./courses.css"
+
 export default function CoursesAbout() {
   return (
-    <div className="Courses-About">
+    <main className="Courses-About">
       <div class="contenedor-cursos-pagina">
         <div class="cabeza-cur">
           <h1>
@@ -145,6 +148,6 @@ export default function CoursesAbout() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

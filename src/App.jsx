@@ -24,11 +24,21 @@ export default function App() {
   const { pathname } = useLocation();
 
   useEffect(() => {
+    let windowed = () => window.scroll(0, 0)
     console.log(pathname);
-    paths.forEach( path => {
-      path !==
-    } )
-    window.scroll(0, 0);
+    switch (pathname) {
+      case paths[0]: windowed(); break;
+      case paths[1]: windowed(); break;
+      case paths[2]: windowed(); break;
+      case paths[3]: windowed(); break;
+      case paths[4]: windowed(); break;
+      case paths[5]: windowed(); break;
+      case paths[6]: windowed(); break;
+      case paths[7]: windowed(); break;
+      case paths[8]: windowed(); break;
+      case paths[9]: windowed(); break;
+      default: return; break;
+    }
   }, [pathname]);
 
   return (
