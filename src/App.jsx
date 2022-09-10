@@ -53,7 +53,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/support" element={<Suport />} />
         <Route path="/search" element={<Class />} />
-        <Route path="/search/about" element={<Courses />} />
+        <Route path="/search/about/:courseId" element={<Courses />} />
         <Route path="/profile/:userId" element={<User />} />
         <Route path="*" element={<Error404 />} />
         <Route path="/team" element={<TeamInfo />} />

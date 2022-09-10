@@ -1,6 +1,9 @@
 import React from "react";
 
+//Img´s
+import { imgs } from './data';
 
+//Css
 import "./courses.css"
 
 export default function CoursesAbout() {
@@ -23,7 +26,7 @@ export default function CoursesAbout() {
           <hr className="hr-courses" />
           <div class="img-programa-cursos">
             <div class="img-programa-cursos-A">
-              <img src="img/logo sena.png" />
+              <img src="https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg" alt="fondo cursos" />
             </div>
           </div>
           <hr className="hr-courses" />
@@ -45,7 +48,7 @@ export default function CoursesAbout() {
           <h3>modalidad de formación:</h3>
           <p>virtual</p>
 
-          <hr />
+          <hr className="hr-courses"/>
 
           <h3>descripción del programa:</h3>
           <p>1. normatividad</p>
@@ -69,8 +72,8 @@ export default function CoursesAbout() {
             Habilidades que desarrolla: -Asistir personas según protocolos de
             primer respondienteynormativa de salud
           </p>
-          <hr />
-          <h1 className="h1-courses">lugar para ubicacion</h1>
+          {/* <hr className="hr-courses"/>
+          <h1 className="h1-courses">lugar para ubicacion</h1> */}
         </div>
         <div class="contenedor-cursos-pagina-2">
           <div class="modalidad-cur">
@@ -131,17 +134,17 @@ export default function CoursesAbout() {
               </p>
               <div class="imagen-redes-cursos-all">
                 <a href="https://www.google.com/">
-                  <img src="img/logo sena.png" />
+                  <img src={ imgs.facebook } />
                 </a>
               </div>
               <div class="imagen-redes-cursos-all">
                 <a href="https://www.google.com/">
-                  <img src="img/logo sena.png" />
+                  <img src={ imgs.instagram } />
                 </a>
               </div>
               <div class="imagen-redes-cursos-all">
                 <a href="https://www.google.com/">
-                  <img src="img/logo sena.png" />
+                  <img src={ imgs.twitter } />
                 </a>
               </div>
             </div>

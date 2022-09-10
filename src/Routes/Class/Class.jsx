@@ -34,7 +34,7 @@ export default function Classmates() {
                 </div>
                 <br />
                 <div className="mas-informacion">
-                  <Link to="about">
+                  <Link to={`about/${e.id}`}>
                     <button>Mas Informacion</button>
                   </Link>
                 </div>
