@@ -12,6 +12,7 @@
 }
 
 .ext {
+    z-index: 1;
     cursor: default;
     position: absolute;
     top: 0;

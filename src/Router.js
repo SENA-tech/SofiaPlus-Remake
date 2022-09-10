@@ -5,12 +5,12 @@ import Footer from './Components/Footer/Footer';
 import About from './Routes/About/About';
 import Suport from './Routes/Suport/Suport';
 import RegisterForm from './Components/Register/register';
-import Classmates from './Routes/Class/Class';
+import Class from './Routes/Class/Class';
 import Error404 from './Routes/404Error/404';
 import User from './Routes/User/User';
 import Logout from './Routes/Logout/Logout';
 import TeamInfo from './Routes/TeamInfo/Teaminfo';
-import Coursemodal from './Components/CourseAbout/CourseModal.';
+import Courses from './Routes/Courses/Courses';
 
 export {
     Home,
@@ -20,10 +20,10 @@ export {
     About,
     Suport,
     RegisterForm,
-    Classmates,
+    Class,
     Error404,
     User,
     Logout,
     TeamInfo,
-    Coursemodal
+    Courses
 }

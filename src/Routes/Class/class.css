@@ -116,11 +116,11 @@ h4 {
   margin: 5px 0;
 }
 .mas-informacion a {
-  color: #fff;
   text-decoration: none;
   transition: 0.2s ease;
 }
 .mas-informacion button {
+  color: #fff;
   width: auto;
   height: auto;
   border: 2px solid #1f4515;
@@ -134,10 +134,8 @@ h4 {
   transition: 0.2s ease;
 }
 
-.mas-informacion:hover a {
-  color: #1f4515;
-}
 .mas-informacion:hover button {
+  color: #1f4515;
   border: 2px solid #4dad33;
   background-color: #fff;
   box-shadow: 0 0px 10px 8px rgba(34, 221, 28, 0.2);
