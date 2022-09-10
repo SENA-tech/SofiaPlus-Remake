@@ -2,7 +2,6 @@ main {
     padding: 8% 2% 5%;
     z-index: 0;
     position: relative;
-    background: #fff;
 }
 
 .text-h1 {
@@ -85,7 +84,6 @@ main {
 }
 
 section article {
-    background-color: #fff;
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 5px;
@@ -304,7 +302,6 @@ h1 {
     border-radius: 10px;
     border: #ccc;
     /* background */
-    background: #ccc;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease;
 }

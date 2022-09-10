@@ -75,8 +75,7 @@ export default function Footer() {
                     <div className="copyright">
                         © 2022 Todos los Derechos Reservados |
                         <a href="https://www.sena.edu.co/es-co/Paginas/default.aspx"
-                        >Sena</a
-                        >
+                        >Sena</a>
                     </div>
 
                     <div className="information">
