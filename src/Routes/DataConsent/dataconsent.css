@@ -5,11 +5,6 @@
 
 embed {
     width: 60%;
-    height: 700px;
+    height: 600px;
     margin: 9.3% auto 5%;
-}
-
-::-webkit-scrollbar {
-    width: 30px;
-    border: none;
 }
