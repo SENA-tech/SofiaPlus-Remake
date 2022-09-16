@@ -35,7 +35,7 @@ export default function NavUser({ visible }) {
                 <h3>{UserType}</h3>
             </div>
             <button onClick={() => { visible(); }}>
-                <img src={UserLogo} alt="sofia plus user" height={60} width={60} />
+                <img className='User-Image-Btn' src={UserLogo} alt="sofia plus user" height={60} width={60} />
             </button>
         </div>
 

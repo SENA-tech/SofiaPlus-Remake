@@ -47,6 +47,11 @@ export default function RegisterForm() {
                                 <label htmlFor='contraseña' className="form-label">Contraseña</label>
                                 <input required onChange={ ev => inputPass(ev) } type="password" name="Password" className="LoginInputs" id="contraseña" placeholder="Constraseña" />
                             </div>
+                            <div className="mb-3">
+                                <label htmlFor='contraseña' className="form-label">Tratamiento de datos personales</label>
+                                <p><input type="checkbox" name="consent" id="consent" /> Acepta los Terminos y Condiciones del servicio y su <a href="./tratamiento de datos.pdf" className='ancor' target="_blank" rel="noopener noreferrer">Tratamiento de datos</a></p>
+                                <br />
+                            </div>
                             <Link to='/' aria-label='exit to login form'>
                                 <input onClick={() => register()} type="submit" value="Registrate" className="btn-primary" />
                             </Link>
