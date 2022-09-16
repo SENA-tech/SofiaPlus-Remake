@@ -49,7 +49,7 @@ export default function RegisterForm() {
                             </div>
                             <div className="mb-3">
                                 <label htmlFor='contraseña' className="form-label">Tratamiento de datos personales</label>
-                                <p><input type="checkbox" name="consent" id="consent" /> Acepta los Terminos y Condiciones del servicio y su <a href="./tratamiento de datos.pdf" className='ancor' target="_blank" rel="noopener noreferrer">Tratamiento de datos</a></p>
+                                <p><input type="checkbox" name="consent" id="consent" /> Acepta los Terminos y Condiciones del servicio y su <Link to="/dataconsent" className='ancor' target="_blank" rel="noopener noreferrer">Tratamiento de datos</Link></p>
                                 <br />
                             </div>
                             <Link to='/' aria-label='exit to login form'>

@@ -19,13 +19,13 @@ import FlechaDown from './Import/img-section-2/flecha.png';
 
 const mods = [
     {
-        title: 'Carreras Presenciales',
+        title: 'Cursos Presenciales',
         description: 'Certificate en carreras presenciales como tecnico o tecnologo',
         link: "/search?=facetoface",
         img: Mod1
     },
     {
-        title: 'Carreras Virtuales',
+        title: 'Cursos Virtuales',
         description: 'Certificate en carreras virtuales como tecnico o tecnologo',
         link: "/search?=virtual",
         img: Mod2
@@ -43,7 +43,7 @@ const mods = [
         img: Mod4
     },
     {
-        title: 'Carreras De Ingles',
+        title: 'Cursos De Ingles',
         description: '¿Quieres aprender ingles? entra a nuestros cursos',
         link: "/search?=english",
         img: Mod5

@@ -16,6 +16,7 @@ import {
   Logout,
   TeamInfo,
   Courses,
+  DataConsent
 } from "./Router";
 
 import { paths } from "./path";
@@ -57,6 +58,7 @@ export default function App() {
         <Route path="/profile/:userId" element={<User />} />
         <Route path="*" element={<Error404 />} />
         <Route path="/team" element={<TeamInfo />} />
+        <Route path="/dataconsent" element={<DataConsent />}/>
       </Routes>
       <Footer />
     </div>

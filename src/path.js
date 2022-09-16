@@ -9,6 +9,7 @@ const paths = [
   "/profile/:userId",
   "*",
   "/team",
+  "/dataconsent"
 ];
 
 export { paths };

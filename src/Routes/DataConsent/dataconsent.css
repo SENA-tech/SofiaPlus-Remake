@@ -1,0 +1,10 @@
+.iframe {
+    display: flex;
+    justify-content: center;
+}
+
+embed {
+    width: 60%;
+    height: 700px;
+    margin: 9.3% auto 5%;
+}
