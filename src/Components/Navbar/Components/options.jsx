@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 //Data
@@ -7,6 +7,12 @@ import { login, register, territorium } from '../data';
 export default function Options({ setter }) {
 
     let token = window.localStorage.getItem('SessionID')
+    const [first, setFirst] = useState(true)
+
+    useEffect(() => {
+      setFirst(!first)
+    }, [token])
+    
 
     return (
 

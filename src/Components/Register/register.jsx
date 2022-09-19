@@ -39,13 +39,14 @@ export default function RegisterForm() {
                             <div className="mb-3">
                                 <label htmlFor='Type' className="form-label">Tipo de Documento</label>
                                 <select required onChange={ev => changeType(ev)} name="type" className="LoginInputs" id="correo electronico" >
-                                    <option value="ti">Tarjeta de Identidad</option>
-                                    <option value="cc">Cedula de Ciudadania</option>
+                                    <option value="1">Cedula de Ciudadania</option>
+                                    <option value="2">Tarjeta de Identidad</option>
+                                    <option value="3">Cedula de Extranjeria</option>
                                 </select>
                             </div>
                             <div className="mb-3">
                                 <label htmlFor='contraseña' className="form-label">Contraseña</label>
-                                <input required onChange={ ev => inputPass(ev) } type="password" name="Password" className="LoginInputs" id="contraseña" placeholder="Constraseña" />
+                                <input required onChange={ev => inputPass(ev)} type="password" name="Password" className="LoginInputs" id="contraseña" placeholder="Constraseña" />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor='contraseña' className="form-label">Tratamiento de datos personales</label>

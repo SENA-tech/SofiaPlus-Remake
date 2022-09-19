@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState ,useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 //Components
@@ -23,7 +23,6 @@ import { paths } from "./path";
 
 export default function App() {
   const { pathname } = useLocation();
-
   useEffect(() => {
     let windowed = () => window.scroll(0, 0)
     console.log(pathname);
@@ -41,7 +40,6 @@ export default function App() {
       default: return; break;
     }
   }, [pathname]);
-
   return (
     <div>
       <Navbar />
