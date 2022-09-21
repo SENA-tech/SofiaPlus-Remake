@@ -19,30 +19,35 @@ import FlechaDown from './Import/img-section-2/flecha.png';
 
 const mods = [
     {
+        id: 1,
         title: 'Cursos Presenciales',
         description: 'Certificate en carreras presenciales como tecnico o tecnologo',
         link: "/search?=facetoface",
         img: Mod1
     },
     {
+        id: 2,
         title: 'Cursos Virtuales',
         description: 'Certificate en carreras virtuales como tecnico o tecnologo',
         link: "/search?=virtual",
         img: Mod2
     },
     {
+        id: 3,
         title: 'Cursos Cortos Virtuales',
         description: 'Certificate con cursos cortos de modo virtual',
         link: "/search?=shorvirtual",
         img: Mod3
     },
     {
+        id: 4,
         title: 'Cursos Cortos Presenciales',
         description: 'Certificate con cursos cortos de modo presencial',
         link: "/search?=shortfacetoface",
         img: Mod4
     },
     {
+        id: 5,
         title: 'Cursos De Ingles',
         description: '¿Quieres aprender ingles? entra a nuestros cursos',
         link: "/search?=english",
@@ -52,16 +57,19 @@ const mods = [
 
 const help = [
     {
+        id: 1,
         title: 'Programa de Formacion',
         description: 'Verifique si se encuentra inscrito',
         img: Ayuda1
     },
     {
+        id: 2,
         title: 'Ayuda y Guia',
         description: 'Encuentre soluciones a las dudas que tenga sobre SofiaPlus Remake',
         img: Ayuda2
     },
     {
+        id: 3,
         title: 'Mas Informacion',
         description: 'Encuentre nuestra guia aqui',
         img: Ayuda3

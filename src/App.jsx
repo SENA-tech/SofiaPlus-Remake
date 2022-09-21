@@ -21,11 +21,15 @@ import {
 
 import { paths } from "./path";
 
+import useGetCourses from "./Services/Curses.services";
+
 export default function App() {
+
+  const { datafecth } = useGetCourses();
+  datafecth();
   const { pathname } = useLocation();
   useEffect(() => {
     let windowed = () => window.scroll(0, 0)
-    console.log(pathname);
     switch (pathname) {
       case paths[0]: windowed(); break;
       case paths[1]: windowed(); break;
@@ -37,6 +41,7 @@ export default function App() {
       case paths[7]: windowed(); break;
       case paths[8]: windowed(); break;
       case paths[9]: windowed(); break;
+      case paths[10]: windowed(); break;
       default: return; break;
     }
   }, [pathname]);

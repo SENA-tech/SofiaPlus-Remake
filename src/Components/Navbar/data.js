@@ -31,12 +31,4 @@ const register = [
     }
 ];
 
-const territorium = [
-    {
-        type: "Territorium",
-        name: "Territorium",
-        url: "https://sena.territorio.la/cms/index.php"
-    }
-]
-
-module.exports = { login, register, territorium }
+module.exports = { login, register }

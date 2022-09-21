@@ -7,7 +7,7 @@ export default function useAouth() {
     const [Password, setPassword] = useState('');
     const [Nombre, setNombre] = useState('');
     const [Apellido, setApellido] = useState('');
-    const [responce, setResponce] = useState('');
+    const [Respuesta, setRespuesta] = useState('Sin Iniciar Sesion');
 
     const inputUser = (event) => {
         setUser(event.target.value);
@@ -52,11 +52,10 @@ export default function useAouth() {
         })
             .then(res => res.json())
             .then(res => {
-                console.log(res);
-                if (res.CODE === 200) { //If
+                if (res.CODE === 200) {
                     window.localStorage.setItem('SessionID', JSON.stringify(res))
                     window.location.reload();
-                } else { //Else
+                } else {
                     console.log('Non Session');
                 }
             })
@@ -81,11 +80,8 @@ export default function useAouth() {
         })
             .then(res => res.json())
             .then(res => {
-                res.register === 'Succesfull Register'
-                    ? //If
-                    setResponce(true)
-                    :// Else
-                    setResponce(false)
+                setRespuesta(res.MESSAGE)
+                console.log(Respuesta);
             })
             .catch(e => console.log(e));
     }

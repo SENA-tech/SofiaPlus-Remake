@@ -136,7 +136,32 @@ h4 {
 
 .mas-informacion:hover button {
   color: #1f4515;
-  border: 2px solid #4dad33;
+  background-color: #fff;
+  box-shadow: 0 0px 10px 8px rgba(34, 221, 28, 0.2);
+}
+
+.crear-cursos h2 {
+  color: #fff;
+}
+
+.crear-cursos button {
+  transition: 0.2s ease;
+  padding: 10px 30px;
+  border-radius: 6px;
+  top: 12%;
+  right: 5%;
+  background: #217a89;
+  position: fixed;
+  display: flex;
+}
+
+.crear-cursos:hover h2 {
+  color: #1f4515;
+}
+
+.crear-cursos:hover button {
+  color: #1f4515;
+  outline: 2px solid #4dad33;
   background-color: #fff;
   box-shadow: 0 0px 10px 8px rgba(34, 221, 28, 0.2);
 }

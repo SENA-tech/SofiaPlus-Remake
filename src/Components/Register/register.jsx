@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 
 //Custom Hooks
 import useAouth from '../../Hooks/useAouth.hook';
@@ -11,9 +11,9 @@ export default function RegisterForm() {
 
     const { register, changeType, inputPass, inputUser, inputApellido, inputNombre } = useAouth();
 
-    return (
-
-        <div className="Login-Form">
+    if (!window.localStorage.getItem('SessionID')) {
+        return (
+            <div className="Login-Form">
             <div className="row">
                 <div className="col-md-8">
                     <div>
@@ -66,7 +66,11 @@ export default function RegisterForm() {
                 <div className="ext" />
             </Link>
         </div>
-
-    )
+        )
+    } else {
+        return (
+            <Navigate to='/' />
+        )
+    }
 
 }

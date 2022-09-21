@@ -28,16 +28,19 @@ export default function NavUser({ visible }) {
     }, [local]);
 
     return (
-
-        <div className="navSF-Base-User">
-            <div className="navSF-Base-User-Data">
-                <h1>{Username}</h1>
-                <h3>{UserType}</h3>
+        <div className='navSF-User-Sec'>
+            <div className="navSF-Base-User">
+                <div className="navSF-Base-User-Data">
+                    <h1>{Username}</h1>
+                    <h3>{UserType}</h3>
+                </div>
+                <div className="navSF-Base-User-Data2">
+                    <div style={{ display: UserType === 'Bienvenido' ? 'block' : 'none' }}></div>
+                </div>
+                <button onClick={() => { visible(); }}>
+                    <img className='User-Image-Btn' src={UserLogo} alt="sofia plus user" height={60} width={60} />
+                </button>
             </div>
-            <button onClick={() => { visible(); }}>
-                <img className='User-Image-Btn' src={UserLogo} alt="sofia plus user" height={60} width={60} />
-            </button>
         </div>
-
     );
 }

@@ -31,8 +31,8 @@ export default function BodyPrincipal() {
             <div className="img">
               {mods.map((e) => {
                 return (
-                  <Link to={e.link}>
-                    <div key={e.title} className="card">
+                  <Link key={e.id} to={e.link}>
+                    <div className="card">
                       <img src={e.img} width="200px" />
                       <div className="details">
                         <h4>{e.title}</h4>
@@ -56,7 +56,7 @@ export default function BodyPrincipal() {
           <div className="cards-ayuda">
             {help.map((e) => {
               return (
-                <div key={e.title} className="cards-ayuda-1">
+                <div key={e.id} className="cards-ayuda-1">
                   <figure>
                     <img src={e.img} width="200px" />
                   </figure>
