@@ -52,7 +52,7 @@ export default function useAouth() {
         })
             .then(res => res.json())
             .then(res => {
-                if (res.CODE === 200) {
+                if (res) {
                     window.localStorage.setItem('SessionID', JSON.stringify(res))
                     window.location.reload();
                 } else {
