@@ -8,36 +8,39 @@ import "./class.css";
 import { data } from "./data";
 
 export default function Classmates() {
-
-  let DATA_COURSES = JSON.parse(window.localStorage.getItem('coursesData'));
-  let USER_DATA = JSON.parse(window.localStorage.getItem('SessionID'));
+  let DATA_COURSES = JSON.parse(window.localStorage.getItem("coursesData"));
+  let USER_DATA = JSON.parse(window.localStorage.getItem("SessionID"));
 
   let data = (param) => {
-    if (param === 1) return 'Carrera Presencial'
-    if (param === 2) return 'Curso Corto Presencial'
-    if (param === 3) return 'Carrera Virtual'
-    if (param === 4) return 'Curso Corto Virtual'
-    if (param === 5) return 'Curso de Ingles'
-  }
+    if (param === 1) return "Carrera Presencial";
+    if (param === 2) return "Curso Corto Presencial";
+    if (param === 3) return "Carrera Virtual";
+    if (param === 4) return "Curso Corto Virtual";
+    if (param === 5) return "Curso de Ingles";
+  };
 
   let create_course = () => {
-    console.log('Quiero crear un curso');
-  }
+    console.log("Quiero crear un curso");
+  };
 
   let boton_cursos = () => {
     if (USER_DATA) {
-
-      let despliegue = USER_DATA._permissions === 1 ? 'flex' : USER_DATA._permissions === 2 ? 'flex' : 'none'
+      let despliegue =
+        USER_DATA._permissions === 1
+          ? "flex"
+          : USER_DATA._permissions === 2
+          ? "flex"
+          : "none";
 
       return (
         <div style={{ display: despliegue }} className="crear-cursos">
-          <button onClick={ () => create_course() }>
+          <button onClick={() => create_course()}>
             <h2>Crear Curso</h2>
           </button>
         </div>
-      )
+      );
     }
-  }
+  };
 
   return (
     <div>
@@ -73,9 +76,7 @@ export default function Classmates() {
             </div>
           );
         })}
-        {
-          boton_cursos()
-        }
+        {boton_cursos()}
       </main>
     </div>
   );

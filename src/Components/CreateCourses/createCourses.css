@@ -1,0 +1,118 @@
+.Courses-Form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  top: 0;
+  padding: 10% 0 5%;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ext {
+  z-index: 1;
+  cursor: default;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #00000099;
+}
+
+.card-header {
+  border-radius: 9px 9px 0 0;
+  margin-left: -0.05px;
+  padding: 15px 25px 15px 25px;
+  background-color: #67b23e;
+}
+
+.card-body {
+  background-color: #f5f4f3;
+  padding: 0px 45px 25px 45px;
+  border-radius: 0 0 9px 9px;
+}
+
+#form-title {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+
+.row {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.col-md-8 {
+  border: 1px #757575 solid;
+  border-radius: 10px;
+}
+
+.mb-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-primary {
+  outline: #4b7f30 3px solid;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px 20px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  border-radius: 5px;
+  background: #67b23e;
+  color: white;
+  border: 0px white solid;
+}
+
+.btn-primary:hover {
+  background: #4b7f30;
+}
+
+.form-label {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 5px;
+}
+
+.LoginInputs {
+  border: none;
+  outline: #757575 1px solid;
+  border-radius: 7px;
+  text-align: center;
+  width: 80%;
+  height: 25px;
+  margin: 15px auto;
+}
+
+.LoginInputs:hover,
+.LoginInputs:focus {
+  outline: 3px solid #67b23e;
+}
+
+@media screen and (max-width: 680px) {
+  .card-body {
+    padding: 0 10px 25px;
+  }
+  .Courses-Form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    top: 0;
+    padding: 25% 0 5%;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .mb-3-names {
+    width: 45%;
+  }
+}

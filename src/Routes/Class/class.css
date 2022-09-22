@@ -172,7 +172,11 @@ h4 {
   }
 
   .contenedor-card-cursos {
+    max-width: 400px;
+    min-width: 400px;
     flex-direction: column;
+    display: flex;
+    align-items: center;
   }
 
   .red {
@@ -204,5 +208,17 @@ h4 {
 
   .txt {
     margin: 0;
+  }
+
+  .crear-cursos button {
+    transition: 0.2s ease;
+    padding: 10px 30px;
+    border-radius: 6px;
+    width: 100px;
+    bottom: 12%;
+    right: 5%;
+    background: #217a89;
+    position: fixed;
+    display: flex;
   }
 }

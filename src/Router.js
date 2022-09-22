@@ -12,6 +12,7 @@ import Logout from './Routes/Logout/Logout';
 import TeamInfo from './Routes/TeamInfo/Teaminfo';
 import Courses from './Routes/Courses/Courses';
 import DataConsent from './Routes/DataConsent/DataConsent';
+import CoursesCreate from './Components/CreateCourses/createCourses';
 
 export {
     Home,
@@ -27,5 +28,6 @@ export {
     Logout,
     TeamInfo,
     Courses,
-    DataConsent
+    DataConsent,
+    CoursesCreate
 }
