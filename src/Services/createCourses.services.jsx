@@ -58,17 +58,6 @@ export default function useGetCourses() {
 
         let userdata = JSON.parse(window.localStorage.getItem('SessionID'))
 
-        console.log("🚀 ~ file: createCourses.services.jsx ~ line 6 ~ useGetCourses ~ nombre", nombre)
-        console.log("🚀 ~ file: createCourses.services.jsx ~ line 8 ~ useGetCourses ~ instructor", instructor)
-        console.log("🚀 ~ file: createCourses.services.jsx ~ line 10 ~ useGetCourses ~ tipo", tipo)
-        console.log("🚀 ~ file: createCourses.services.jsx ~ line 12 ~ useGetCourses ~ image", image)
-        console.log("🚀 ~ file: createCourses.services.jsx ~ line 14 ~ useGetCourses ~ descripcion", descripcion)
-        console.log("🚀 ~ file: createCourses.services.jsx ~ line 16 ~ useGetCourses ~ requisitos", requisitos)
-        console.log("🚀 ~ file: createCourses.services.jsx ~ line 18 ~ useGetCourses ~ habilidades", habilidades)
-        console.log("🚀 ~ file: createCourses.services.jsx ~ line 20 ~ useGetCourses ~ inicio", inicio)
-        console.log("🚀 ~ file: createCourses.services.jsx ~ line 22 ~ useGetCourses ~ fin", fin)
-        console.log("🚀 ~ file: createCourses.services.jsx ~ line 24 ~ useGetCourses ~ duracion", duracion)
-
         fetch('https://SofiaPlus-Web-Server.11-cardozo-joan.repl.co/data/create', {
             method: "POST",
             headers: {
@@ -92,6 +81,7 @@ export default function useGetCourses() {
             .then(res => res.json())
             .then(res => {
                 console.log(res);
+                window.location.reload();
             })
             .catch(err => console.log(err))
     }
