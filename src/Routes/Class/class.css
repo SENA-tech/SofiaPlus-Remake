@@ -145,14 +145,16 @@ h4 {
 }
 
 .crear-cursos button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: 0.2s ease;
   padding: 10px 30px;
   border-radius: 6px;
-  top: 12%;
+  bottom: 12%;
   right: 5%;
   background: #217a89;
   position: fixed;
-  display: flex;
 }
 
 .crear-cursos:hover h2 {
@@ -215,6 +217,7 @@ h4 {
     padding: 10px 30px;
     border-radius: 6px;
     width: 100px;
+    height: 100px;
     bottom: 12%;
     right: 5%;
     background: #217a89;

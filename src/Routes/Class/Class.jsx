@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //CSS
 import "./class.css";
@@ -29,18 +29,24 @@ export default function Classmates() {
         USER_DATA._permissions === 1
           ? "flex"
           : USER_DATA._permissions === 2
-          ? "flex"
-          : "none";
+            ? "flex"
+            : "none";
 
       return (
         <div style={{ display: despliegue }} className="crear-cursos">
-          <button onClick={() => create_course()}>
-            <h2>Crear Curso</h2>
-          </button>
+          <Link to='createCourse'>
+            <button onClick={() => create_course()}>
+              <h2>Crear Curso</h2>
+            </button>
+          </Link>
         </div>
       );
     }
   };
+
+  fetch('https://SofiaPlus-Web-Server.11-cardozo-joan.repl.co/data/getter')
+    .then(res => console.log(res))
+    .catch(err => console.log(err))
 
   return (
     <div>
