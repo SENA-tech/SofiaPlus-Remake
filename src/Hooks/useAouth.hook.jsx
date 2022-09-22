@@ -56,7 +56,6 @@ export default function useAouth() {
                     window.localStorage.setItem('SessionID', JSON.stringify(res))
                     window.location.reload();
                 } else {
-                    window.localStorage.removeItem('SessionID');
                     console.log('Non Session');
                 }
             })
