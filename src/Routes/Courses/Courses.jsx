@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 //Img´s
 import { imgs } from './data';
@@ -7,6 +7,24 @@ import { imgs } from './data';
 import "./courses.css"
 
 export default function CoursesAbout() {
+
+  const [Data, setData] = useState()
+
+  fetch('http://localhost:4000/data/select', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+
+    })
+  })
+    .then(res => res.json())
+    .then(res => setData(res))
+    .catch(err => console.log(err))
+
+  console.log(Data);
+
   return (
     <main className="Courses-About">
       <div class="contenedor-cursos-pagina">
@@ -48,7 +66,7 @@ export default function CoursesAbout() {
           <h3>modalidad de formación:</h3>
           <p>virtual</p>
 
-          <hr className="hr-courses"/>
+          <hr className="hr-courses" />
 
           <h3>descripción del programa:</h3>
           <p>1. normatividad</p>
@@ -134,17 +152,17 @@ export default function CoursesAbout() {
               </p>
               <div class="imagen-redes-cursos-all">
                 <a href="https://www.google.com/">
-                  <img src={ imgs.facebook } />
+                  <img src={imgs.facebook} />
                 </a>
               </div>
               <div class="imagen-redes-cursos-all">
                 <a href="https://www.google.com/">
-                  <img src={ imgs.instagram } />
+                  <img src={imgs.instagram} />
                 </a>
               </div>
               <div class="imagen-redes-cursos-all">
                 <a href="https://www.google.com/">
-                  <img src={ imgs.twitter } />
+                  <img src={imgs.twitter} />
                 </a>
               </div>
             </div>

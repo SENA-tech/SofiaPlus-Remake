@@ -29,5 +29,5 @@ export {
     TeamInfo,
     Courses,
     DataConsent,
-    CoursesCreate
+    CoursesCreate,
 }

@@ -7,7 +7,7 @@ h4 {
 }
 .contenedor-cursos {
   width: 95%;
-  margin: 10% auto 5%;
+  margin: 250px auto 5%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -168,9 +168,137 @@ h4 {
   box-shadow: 0 0px 10px 8px rgba(34, 221, 28, 0.2);
 }
 
+/**  Buscador  */
+.formulario-busqueda-filtros {
+  background: #fff;
+  top: 10%;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0px 4px rgb(0 0 0 / 20%);
+  display: flex;
+  justify-content: center;
+}
+
+.formulario-busqueda-filtros-box {
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 5%;
+}
+
+.buscador-css {
+  width: 80%;
+  max-width: 450px;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  background-color: #fff;
+  text-align: center;
+  outline: none;
+  /* letra */
+
+  /* sombra */
+  box-shadow: 0 1px 10px rgb(0 0 0 / 20%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* buscador */
+.icon-searh {
+  display: flex;
+  margin: 0 0px 0 10px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* texto busqueda */
+.input-search-css {
+  display: flex;
+  margin: 0px 10px;
+  width: 400px;
+  height: 100%;
+}
+
+.input-search-css input {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  border: none;
+  background-color: #fff;
+  outline: none;
+  font-size: 16px;
+  padding: 0px 0px 0px 2px;
+}
+
+/* filtros */
+.icon-filtros {
+  display: flex;
+  /* margin: 0 10px 0 0; */
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.filtro {
+  display: flex;
+  height: 100%;
+}
+
+.filro-options {
+  max-width: 140px;
+  width: auto;
+  outline: none;
+  appearance: none;
+  border: 0;
+}
+
+.filtros-boton-style select {
+  width: 100%;
+  cursor: auto;
+  appearance: none;
+  max-width: 450px;
+  height: auto;
+  border-radius: 30px;
+  border: none;
+  background-color: #fff;
+  text-align: center;
+  outline: none;
+  justify-content: center;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 20%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+/* margin */
+
+.filtros-boton-style,
+.buscador-css,
+.text-filtros {
+  margin-bottom: 10px;
+}
+
+/* text */
+.text-filtros {
+  text-align: center;
+  margin: 15px 0px;
+  color: #11383f;
+}
+
+.text-filtros h2 {
+  font-size: 20px;
+}
+
 @media screen and (max-width: 680px) {
   .contenedor-cursos {
-    margin: 25% auto 5%;
+    margin: 50% auto 5%;
   }
 
   .contenedor-card-cursos {

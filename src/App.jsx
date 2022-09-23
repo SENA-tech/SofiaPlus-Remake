@@ -17,7 +17,7 @@ import {
   TeamInfo,
   Courses,
   DataConsent,
-  CoursesCreate
+  CoursesCreate,
 } from "./Router";
 
 import { paths } from "./path";
