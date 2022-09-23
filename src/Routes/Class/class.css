@@ -79,7 +79,7 @@ h4 {
   box-shadow: 0 0px 20px 6px rgba(12, 129, 6, 0.4);
 }
 .red img {
-  width: 200px;
+  height: 100%;
 }
 .header-cursos h2 {
   font-size: 22px;
@@ -298,7 +298,7 @@ h4 {
 
 @media screen and (max-width: 680px) {
   .contenedor-cursos {
-    margin: 50% auto 5%;
+    margin: 60% auto 5%;
   }
 
   .contenedor-card-cursos {
