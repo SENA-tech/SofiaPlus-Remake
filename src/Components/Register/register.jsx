@@ -9,7 +9,7 @@ import './register.css'
 
 export default function RegisterForm() {
 
-    const { register, changeType, inputPass, inputUser, inputApellido, inputNombre } = useAouth();
+    const { register, changeType, inputPass, inputUser, inputApellido, inputNombre, inputImagen } = useAouth();
 
     if (!window.localStorage.getItem('SessionID')) {
         return (
@@ -36,6 +36,10 @@ export default function RegisterForm() {
                                 <label htmlFor='identificacion' className="form-label">Identificacion</label>
                                 <input required onChange={ev => inputUser(ev)} type='number' name="Identificacion" className="LoginInputs" id="identificacion" placeholder="Identificacion" />
                             </div>
+                            <div className="mb-3">
+                                    <label htmlFor='imagen' className="form-label">Imagen de Perfil</label>
+                                    <input required onChange={ev => inputImagen(ev)} type='text' name="imagen" className="LoginInputs" id="imagen" placeholder="Link de imagen" />
+                                </div>
                             <div className="mb-3">
                                 <label htmlFor='Type' className="form-label">Tipo de Documento</label>
                                 <select required onChange={ev => changeType(ev)} name="type" className="LoginInputs" id="correo electronico" >

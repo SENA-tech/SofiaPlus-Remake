@@ -133,7 +133,7 @@ export default function CoursesCreate() {
                   <div className="mb-8">
                     <div className="mb-3-names">
                       <label htmlFor="nombres" className="form-label">
-                        Nombres
+                        Fecha Inicio
                       </label>
                       <input
                         onChange={ev => inputInicio(ev)}
@@ -146,7 +146,7 @@ export default function CoursesCreate() {
                     </div>
                     <div className="mb-3-names">
                       <label htmlFor="apellidos" className="form-label">
-                        Apellidos
+                        Fecha FIn
                       </label>
                       <input
                         onChange={ev => inputFin(ev)}

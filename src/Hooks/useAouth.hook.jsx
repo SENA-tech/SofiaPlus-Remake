@@ -8,6 +8,7 @@ export default function useAouth() {
     const [Nombre, setNombre] = useState('');
     const [Apellido, setApellido] = useState('');
     const [Respuesta, setRespuesta] = useState('Sin Iniciar Sesion');
+    const [imagen, setImagen] = useState('')
 
     const inputUser = (event) => {
         setUser(event.target.value);
@@ -29,6 +30,10 @@ export default function useAouth() {
 
     const inputApellido = (event) => {
         setApellido(event.target.value);
+    }
+
+    const inputImagen = (event) => {
+        setImagen(event.target.value);
     }
 
     const login = () => {
@@ -73,6 +78,7 @@ export default function useAouth() {
             body: JSON.stringify({
                 Type: Type,
                 Identification: User,
+                Image: imagen,
                 Password: Password,
                 FirstName: Nombre,
                 SecondName: Apellido
@@ -86,6 +92,6 @@ export default function useAouth() {
             .catch(e => console.log(e));
     }
 
-    return { login, register, inputPass, inputUser, changeType, inputNombre, inputApellido }
+    return { login, register, inputPass, inputUser, changeType, inputNombre, inputApellido, inputImagen }
 
 }
