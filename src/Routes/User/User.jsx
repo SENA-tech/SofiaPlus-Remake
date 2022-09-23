@@ -14,22 +14,6 @@ export default function User() {
     const { pathname } = useLocation();
     const { userId } = useParams();
 
-    //States
-    const [profiledata, setProfiledata] = useState({})
-
-    function Fecth() {
-        return (
-            <div className="User-Home" >
-                <br /><br /><br /><br /><br /><br /><br /><br />
-                <h1> {profile._id} </h1>
-                <h1> {profile._name} </h1>
-                <h1> {profile._lastName} </h1>
-                <h1> {profile._type} </h1>
-                <br /><br /><br /><br /><br /><br /><br /><br />
-            </div>
-        )
-    }
-
     function Nofecth() {
         return (
             <div className="User-Home" >
@@ -42,12 +26,12 @@ export default function User() {
 
     useEffect(() => {
         if (userId) {
-            console.log(userId);
             getProfile(userId);
         } else {
             console.log(pathname);
         }
     }, [pathname, userId]);
+
 
     return (
 
@@ -59,10 +43,10 @@ export default function User() {
                     </div>
                     <hr className='hr' />
                     <div className="Sofiaplus-User-s1-profileData-img">
-                        <img src={UserLogo} alt="SENA Sofiaplus User" />
+                        <img src={profile._profileimage ? profile._profileimage : UserLogo} alt="SENA Sofiaplus User" />
                     </div>
                     <div className="Sofiaplus-User-s1-profileData-name">
-                        <hr className='hr' />
+                        <br />
                         <h3> {profile._name} </h3>
                         <h3> {profile._lastName} </h3>
                         <hr className='hr' />

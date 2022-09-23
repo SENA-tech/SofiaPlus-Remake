@@ -1,5 +1,11 @@
-import React, { useState ,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
+
+import { disableReactDevTools } from '@fvilers/disable-react-devtools';
+
+if (process.env.NODE_ENV === 'production') {
+  disableReactDevTools();
+}
 
 //Components
 import {
@@ -58,12 +64,12 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/support" element={<Suport />} />
         <Route path="/search" element={<Class />} />
-        <Route path="/search/createCourse" element={<CoursesCreate />}/>
+        <Route path="/search/createCourse" element={<CoursesCreate />} />
         <Route path="/search/about/:courseId" element={<Courses />} />
         <Route path="/profile/:userId" element={<User />} />
         <Route path="*" element={<Error404 />} />
         <Route path="/team" element={<TeamInfo />} />
-        <Route path="/dataconsent" element={<DataConsent />}/>
+        <Route path="/dataconsent" element={<DataConsent />} />
       </Routes>
       <Footer />
     </div>

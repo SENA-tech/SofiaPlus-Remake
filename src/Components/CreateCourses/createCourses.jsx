@@ -184,9 +184,6 @@ export default function CoursesCreate() {
               </div>
             </div>
           </div>
-          <Link to="/search" aria-label="exit to login form">
-            <div className="ext" />
-          </Link>
         </main>
       );
     }

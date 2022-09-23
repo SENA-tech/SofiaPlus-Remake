@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-//import Courses from '../../../Services/Curses.services';
+import useProfile from '../../../Hooks/useProfile.hook';
 
 //Data
 import UserLogo from '../Import/UserLogo.png';
@@ -7,6 +7,8 @@ import UserLogo from '../Import/UserLogo.png';
 //hooks
 
 export default function NavUser({ visible }) {
+
+    const { getProfile, profile } = useProfile()
 
     let local = JSON.parse(window.localStorage.getItem('SessionID'));
 
@@ -21,11 +23,21 @@ export default function NavUser({ visible }) {
             setUsername(' ')
             setUserType('Hola Usuario');
         } else {
-            setUsername(local._name);
-            setUserType('Bienvenido');
+            if (local._name) {
+                setUsername(local._name);
+                setUserType('Bienvenido');
+            }
         }
-
     }, [local]);
+
+    //Return Image
+    let image = () => {
+        if (local) {
+            return local._profileimage
+        } else {
+            return UserLogo
+        }
+    }
 
     return (
         <div className='navSF-User-Sec'>
@@ -38,7 +50,7 @@ export default function NavUser({ visible }) {
                     <div style={{ display: UserType === 'Bienvenido' ? 'block' : 'none' }}></div>
                 </div>
                 <button onClick={() => { visible(); }}>
-                    <img className='User-Image-Btn' src={UserLogo} alt="sofia plus user" height={60} width={60} />
+                    <img className='User-Image-Btn' src={image()} alt="sofia plus user" height={60} width={60} />
                 </button>
             </div>
         </div>

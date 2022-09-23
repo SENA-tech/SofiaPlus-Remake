@@ -131,6 +131,10 @@ button {
     background-color: #fff;
 }
 
+.navSF-Base-User img {
+    border-radius: 50px;
+}
+
 @media screen and (max-width: 680px) {
 
     .navSF-Options-selects ul {
