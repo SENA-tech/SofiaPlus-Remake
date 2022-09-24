@@ -19,7 +19,7 @@ export default function Options({ setter }) {
         <div className="navSF-Options-selects">
             <ul>
                 <li>
-                    <Link to='search'>Buscador</Link >
+                    <Link to='search'>Buscar Curso</Link >
                 </li>
                 <li>
                     <a href='https://sena.territorio.la/cms/index.php' target="_blank" >Territorium</a >

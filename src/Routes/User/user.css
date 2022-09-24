@@ -17,6 +17,7 @@
 }
 
 .Sec2 {
+    height: 100%;
     width: 70%;
     padding: 20px;
 }
@@ -33,7 +34,7 @@
 
 .Sofiaplus-User-s1-profileData-img img {
     outline: 2.5px solid #000;
-    width: 60%;
+    width: 50%;
     transition: all 0.2s;
     border-radius: 50%;
 }
@@ -145,8 +146,8 @@ hr {
         margin: 20px;
     }
     .Sofiaplus-User-s1-profileData-img img {
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
     }
     .Sofiaplus-User-s1-profileData-identifier h3 {
         width: 100%;
