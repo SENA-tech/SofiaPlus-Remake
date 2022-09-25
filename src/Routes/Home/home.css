@@ -238,8 +238,8 @@ h1 {
 
 .anun {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .anuncios {
@@ -281,30 +281,6 @@ h1 {
 }
 
 /* anuncios */
-
-.anun {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.anuncios {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* espacio */
-    margin: 1.5rem 0;
-    /*  */
-    width: 1000px;
-    height: 300px;
-    /* borde */
-    border-radius: 10px;
-    border: #ccc;
-    /* background */
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.2s ease;
-}
 
 .anuncios img {
     width: 1000px;

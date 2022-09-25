@@ -35,7 +35,7 @@ let TeamData = [
     {
         id: "5",
         name: "Johan Jeffrey Cardozo",
-        description: "",
+        description: "Desarrollador Web Junior, Contribuidor del Open Source, apasionado por la tecnología y la programación.",
         main: "Tecnico en Programacion",
         roles: "Frontend, Documenter",
         image: "https://avatars.githubusercontent.com/u/101153810?v=4",
