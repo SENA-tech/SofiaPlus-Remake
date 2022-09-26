@@ -34,7 +34,8 @@
 
 .Sofiaplus-User-s1-profileData-img img {
     outline: 2.5px solid #000;
-    width: 50%;
+    width: 200px;
+    height: 200px;
     transition: all 0.2s;
     border-radius: 50%;
 }
