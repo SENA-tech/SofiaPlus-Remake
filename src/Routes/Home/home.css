@@ -62,6 +62,7 @@ main {
     border-radius: 25px;
     border: solid 1px #217a89;
     transition: all ease 0.2s;
+    cursor: default;
 }
 
 #body-img1 {
@@ -163,7 +164,8 @@ section article {
     transition: all 0.2s ease;
 }
 
-#boton button:hover, #body-information:hover {
+#boton button:hover,
+#body-information:hover {
     color: #000;
     background-color: #fff;
     border: #217a89 1px solid;
@@ -301,7 +303,12 @@ h1 {
     flex-wrap: wrap;
 }
 
+.cards-ayuda-link {
+    text-decoration: none;
+}
+
 .cards-ayuda-1 {
+    height: 360px;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -341,6 +348,7 @@ h1 {
 }
 
 .cards-contenido h3 {
+    color: #10373e;
     font-weight: 550;
     margin-bottom: 10px;
 }

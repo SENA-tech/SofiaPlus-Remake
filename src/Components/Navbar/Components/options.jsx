@@ -7,12 +7,6 @@ import { login, register } from '../data';
 export default function Options({ setter }) {
 
     let token = window.localStorage.getItem('SessionID')
-    const [first, setFirst] = useState(true)
-
-    useEffect(() => {
-        setFirst(!first)
-    }, [token])
-
 
     return (
 
@@ -35,11 +29,9 @@ export default function Options({ setter }) {
                         : //Else
                         register.map(e => {
                             return (
-
                                 <li key={e.type}>
                                     <Link onClick={() => { setter() }} to={e.url}>{e.name}</Link>
                                 </li>
-
                             )
                         })
                 }

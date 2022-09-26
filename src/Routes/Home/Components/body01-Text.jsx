@@ -16,9 +16,9 @@ export default function Body01() {
                 </h3>
                 <h1 className="text-h1">
                     <Link to='/about' id='body-information'>
-                        <img className='img-link-about' src={FlechaDown} width="25px" />
+                        <img className='img-link-about' src={FlechaDown} width="25px" alt='flechas SENA'/>
                         Mas Informacion
-                        <img className='img-link-about' src={FlechaDown} width="25px" />
+                        <img className='img-link-about' src={FlechaDown} width="25px" alt='flechas SENA'/>
                     </Link>
                 </h1>
             </div>

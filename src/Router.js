@@ -13,6 +13,7 @@ import TeamInfo from './Routes/TeamInfo/Teaminfo';
 import Courses from './Routes/Courses/Courses';
 import DataConsent from './Routes/DataConsent/DataConsent';
 import CoursesCreate from './Components/CreateCourses/createCourses';
+import DeleteCourse from './Routes/DeleteCourse/DeleteCourse';
 
 export {
     Home,
@@ -30,4 +31,5 @@ export {
     Courses,
     DataConsent,
     CoursesCreate,
+    DeleteCourse
 }

@@ -10,6 +10,7 @@ import useSearch from "../../Services/searchCourses.services";
 //Components
 import Search from "./Components/Search";
 import CoursesButton from "./Components/CoursesButton";
+import CoursesEditButton from "./Components/CourseEditButton";
 
 export default function Classmates() {
 
@@ -17,6 +18,7 @@ export default function Classmates() {
   const [input, setInput] = useState(search)
   const [datos, setDatos] = useState(true)
 
+  let permission = JSON.parse(window.localStorage.getItem("SessionID"));
   let DATA_COURSES = JSON.parse(window.localStorage.getItem("coursesData"));
 
   let data = (param) => {
@@ -37,6 +39,14 @@ export default function Classmates() {
     }
   }
 
+  let style = () => {
+    if (permission) {
+      return permission._permissions === 1 ? 'flex' : 'none'
+    } else {
+      return 'none'
+    }
+  }
+
   return (
     <div>
       <Search returned={() => returned()} INPUT={input} />
@@ -52,22 +62,30 @@ export default function Classmates() {
                     </div>
                   </div>
                   <h2>{res.nombre}</h2>
-                  <h4>{res.numero_ficha}</h4>
+                  <h4>{res.id}</h4>
+                  <CoursesEditButton />
                 </div>
                 <div className="descripcion-cursos">
                   <div className="txt">
                     <h4> Modalidad </h4>
                     <p>{data(res.tipo)}</p>
                     <h4> Duracion </h4>
-                    <p>{res.duracion}</p>
+                    <p>{res.duracion} Horas</p>
                     <h4> Descripcion </h4>
                     <p> {res.descripcion} </p>
                   </div>
                   <br />
-                  <div className="mas-informacion">
-                    <Link to={`about/${res.id}`}>
-                      <button>Mas Informacion</button>
-                    </Link>
+                  <div className="mas">
+                    <div className="mas-informacion">
+                      <Link to={`about/${res.id}`}>
+                        <button>Mas Informacion</button>
+                      </Link>
+                    </div>
+                    <div style={{ display: style() }} className="mas-eliminacion">
+                      <Link to={`delete/${res.id}`}>
+                        <button>Eliminar Curso</button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>

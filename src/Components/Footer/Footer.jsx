@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes, useLocation, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 //Css
 import './footer.css'
@@ -79,9 +79,9 @@ export default function Footer() {
                     </div>
 
                     <div className="information">
-                        <a href="">Informacion del sena</a> |
-                        <a href="">Privacion y Politica</a> |
-                        <a href="">Terminos y Condiciones</a>
+                        <a target='_blank' href="https://www.sena.edu.co/es-co/sena/Paginas/quienesSomos.aspx">Informacion del sena</a> |
+                        <a target='_blank' href="http://portal.senasofiaplus.edu.co/index.php/seguridad/tips-de-seguridad-de-la-informacion">Privacion y Politica</a> |
+                        <Link target='_blank' to="/dataconsent">Terminos y Condiciones</Link>
                     </div>
                 </div>
             </div>

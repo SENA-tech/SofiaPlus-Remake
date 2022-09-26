@@ -17,6 +17,8 @@ import Ayuda3 from './Import/img-anuncios/img3.png';
 import FlechaAyuda from './Import/img-anuncios/flecha.png';
 import FlechaDown from './Import/img-section-2/flecha.png';
 
+let USER_DATA = JSON.parse(window.localStorage.getItem("SessionID"));
+
 const mods = [
     {
         id: 1,
@@ -58,20 +60,23 @@ const mods = [
 const help = [
     {
         id: 1,
+        link: `/profile/${USER_DATA._key}`,
         title: 'Programa de Formacion',
         description: 'Verifique si se encuentra inscrito',
         img: Ayuda1
     },
     {
         id: 2,
+        link: '/support',
         title: 'Ayuda y Guia',
-        description: 'Encuentre soluciones a las dudas que tenga sobre SofiaPlus Remake',
+        description: 'Encuentre nuestra guia aqui',
         img: Ayuda2
     },
     {
         id: 3,
+        link: '/about',
         title: 'Mas Informacion',
-        description: 'Encuentre nuestra guia aqui',
+        description: 'Encuentre soluciones a sus dudas',
         img: Ayuda3
     }
 ]

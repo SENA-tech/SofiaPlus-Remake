@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 //Img´s
 import { imgs } from './data';
@@ -143,7 +144,7 @@ export default function CoursesAbout() {
           <div class="cont-g-c">
             <div class="guia-cur">
               <button>
-                <a href="https://www.google.com/">guia de inscripcion</a>
+                <Link to="/support">guia de inscripcion</Link>
               </button>
             </div>
             <div class="compartir-cur">

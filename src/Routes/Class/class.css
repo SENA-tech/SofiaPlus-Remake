@@ -109,13 +109,17 @@ h4 {
   margin: 2px;
   cursor: default;
 }
-.mas-informacion {
-  margin: 0 0 10px 0;
+.mas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.mas-informacion, .mas-eliminacion {
+  margin: 0 5px 10px 0;
   display: flex;
   justify-content: center;
-  margin: 5px 0;
 }
-.mas-informacion a {
+.mas-informacion a, .mas-eliminacion a {
   text-decoration: none;
   transition: 0.2s ease;
 }
@@ -134,34 +138,79 @@ h4 {
   transition: 0.2s ease;
 }
 
-.mas-informacion:hover button {
+.mas-eliminacion button {
+  color: #fff;
+  width: auto;
+  height: auto;
+  border: 2px solid #1f4515;
+  border-radius: 8px;
+  padding: 2px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff0000;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+.mas-informacion:hover button, .mas-eliminacion:hover button {
   color: #1f4515;
   background-color: #fff;
   box-shadow: 0 0px 10px 8px rgba(34, 221, 28, 0.2);
 }
 
-.crear-cursos h2 {
+.crear-cursos h2, .editar-cursos h4 {
   color: #fff;
 }
 
-.crear-cursos button {
+.crear-cursos button, .editar-cursos button {
+  width: 200px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.2s ease;
-  padding: 10px 30px;
   border-radius: 6px;
-  bottom: 12%;
-  right: 5%;
   background: #217a89;
   position: fixed;
 }
 
-.crear-cursos:hover h2 {
+.crear-cursos button {
+  padding: 10px 30px;
+  bottom: 12%;
+  right: 5%;
+}
+
+.editar-cursos {
+  padding: 15px 0;
+  height: auto;
+}
+
+.editar-cursos, .editar-cursos button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.editar-cursos a {
+  text-decoration: none;
+}
+
+.editar-cursos button {
+  position: relative;
+}
+
+.editar-cursos h4 {
+  display: flex;
+  margin: 15px auto;
+}
+
+.crear-cursos:hover h2, .editar-cursos:hover h4 {
   color: #1f4515;
 }
 
-.crear-cursos:hover button {
+.crear-cursos:hover button, .editar-cursos:hover button {
   color: #1f4515;
   outline: 2px solid #4dad33;
   background-color: #fff;
@@ -314,7 +363,7 @@ h4 {
   }
 
   .mas-informacion {
-    margin: 0 0 10px 0;
+    margin: 0 10px 10px 0;
     display: flex;
     justify-content: center;
   }
@@ -340,17 +389,24 @@ h4 {
     margin: 0;
   }
 
-  .crear-cursos button {
+  .crear-cursos button{
     transition: 0.2s ease;
     padding: 10px 30px;
     border-radius: 6px;
     width: 100px;
     height: 100px;
-    bottom: 12%;
-    right: 5%;
     background: #217a89;
     position: fixed;
     display: flex;
+  }
+
+  .editar-cursos button { 
+    height: 40px;
+  }
+
+  .crear-cursos button {
+    bottom: 2%;
+    right: 5%;
   }
 
   .formulario-busqueda-filtros {

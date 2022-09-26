@@ -9,7 +9,7 @@ export default function CoursesButton() {
 
         return (
             <div style={{ display: despliegue }} className="crear-cursos">
-                <Link to='createCourse'>
+                <Link to='createcourse'>
                     <button>
                         <h2>Crear Curso</h2>
                     </button>

@@ -7,7 +7,7 @@ export default function Body02() {
     return(
 
         <div className="homeSFb body02">
-            <img src={LaretalImg} id='body-img1' className='body--img' />
+            <img src={LaretalImg} id='body-img1' className='body--img' alt='imagen inicio SENA'/>
         </div>
 
     )
