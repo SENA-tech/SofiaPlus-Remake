@@ -7,14 +7,14 @@ export default function Error404() {
 
     return (
         <div className="ClassmatesSF">
-            <div class="error-404">
+            <div className="error-404">
                 <Link to='/'>
-                    <h1 class="er4">Error - 404</h1>
+                    <h1 className="er4">Error - 404</h1>
                 </Link>
-                <p class="txt2">Lo sentimos, el equipo de desarrollo del SENA esta trabajando para corregir el error, gracias por su
+                <p className="txt2">Lo sentimos, el equipo de desarrollo del SENA esta trabajando para corregir el error, gracias por su
                     comprension :3
                 </p>
-                <p class="txt2">Intentalo mas tarde</p>
+                <p className="txt2">Intentalo mas tarde</p>
             </div>
         </div>
     )

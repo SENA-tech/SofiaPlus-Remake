@@ -6,8 +6,6 @@ import { mods, FlechaDown, FlechaAyuda, help, Banner } from "../data";
 
 export default function BodyPrincipal() {
 
-  let USER_DATA = JSON.parse(window.localStorage.getItem("SessionID"));
-
   return (
     <div>
       <section className="contenedor">

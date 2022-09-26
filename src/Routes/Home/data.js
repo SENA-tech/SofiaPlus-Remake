@@ -60,7 +60,7 @@ const mods = [
 const help = [
     {
         id: 1,
-        link: `/profile/${USER_DATA._key}`,
+        link: USER_DATA ? `/profile/${USER_DATA._key}` : '/login',
         title: 'Programa de Formacion',
         description: 'Verifique si se encuentra inscrito',
         img: Ayuda1
