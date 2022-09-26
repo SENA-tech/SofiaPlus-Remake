@@ -21,5 +21,24 @@ export default function useProfile() {
             .catch(e => console.log(e));
     }
 
-    return { getProfile, profile };
+    const updateProfile = (img, pass, tok) => {
+        fetch('https://SofiaPlus-Web-Server.11-cardozo-joan.repl.co/users/edit', {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                Imagen: img,
+                Password: pass,
+                token: tok
+            })
+        })
+            .then(res => res.json())
+            .then(res => {
+                console.log(res);
+            })
+            .catch(e => console.log(e));
+    }
+
+    return { getProfile, profile, updateProfile };
 }

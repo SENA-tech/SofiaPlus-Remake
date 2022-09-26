@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function CoursesEditButton() {
+export default function CoursesEditButton({ ident }) {
 
     let USER_DATA = JSON.parse(window.localStorage.getItem("SessionID"));
 
@@ -9,7 +9,7 @@ export default function CoursesEditButton() {
 
         return (
             <div style={{ display: despliegue }} className="editar-cursos">
-                <Link to='editcourse'>
+                <Link to={`editcourse/${ident}`} >
                     <button>
                         <h4>Editar Cursos</h4>
                     </button>

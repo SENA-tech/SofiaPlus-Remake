@@ -14,6 +14,8 @@ import Courses from './Routes/Courses/Courses';
 import DataConsent from './Routes/DataConsent/DataConsent';
 import CoursesCreate from './Components/CreateCourses/createCourses';
 import DeleteCourse from './Routes/DeleteCourse/DeleteCourse';
+import EditCourse from './Routes/EditCourse/EditCourse';
+import EditProfile from './Components/EditProfile/EDitProfile';
 
 export {
     Home,
@@ -31,5 +33,7 @@ export {
     Courses,
     DataConsent,
     CoursesCreate,
-    DeleteCourse
+    DeleteCourse,
+    EditCourse,
+    EditProfile
 }

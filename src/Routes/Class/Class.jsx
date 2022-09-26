@@ -13,10 +13,9 @@ import CoursesButton from "./Components/CoursesButton";
 import CoursesEditButton from "./Components/CourseEditButton";
 
 export default function Classmates() {
-
   const { search } = useSearch();
-  const [input, setInput] = useState(search)
-  const [datos, setDatos] = useState(true)
+  const [input, setInput] = useState(search);
+  const [datos, setDatos] = useState(true);
 
   let permission = JSON.parse(window.localStorage.getItem("SessionID"));
   let DATA_COURSES = JSON.parse(window.localStorage.getItem("coursesData"));
@@ -30,67 +29,69 @@ export default function Classmates() {
   };
 
   let returned = () => {
-    console.log('returned');
-    setDatos(!datos)
+    console.log("returned");
+    setDatos(!datos);
     if (datos) {
       return (
-        <Navigate to='/search' />
-      )
+        <div>
+          <Navigate to="/search" />
+          <Navigate to="/search" />
+        </div>
+      );
     }
-  }
+  };
 
   let style = () => {
     if (permission) {
-      return permission._permissions === 1 ? 'flex' : 'none'
+      return permission._permissions === 1 ? "flex" : "none";
     } else {
-      return 'none'
+      return "none";
     }
-  }
+  };
 
   return (
     <div>
       <Search returned={() => returned()} INPUT={input} />
       <main className="contenedor-cursos">
-        {
-          DATA_COURSES.map((res) => {
-            return (
-              <div key={res.id} className="contenedor-card-cursos">
-                <div className="header-cursos">
-                  <div className="red-2">
-                    <div className="red">
-                      <img src={res.image} alt="SENA-clases" />
-                    </div>
+        {DATA_COURSES.map((res) => {
+          return (
+            <div key={res.id} className="contenedor-card-cursos">
+              <div className="header-cursos">
+                <div className="red-2">
+                  <div className="red">
+                    <img src={res.image} alt="SENA-clases" />
                   </div>
-                  <h2>{res.nombre}</h2>
-                  <h4>{res.id}</h4>
-                  <CoursesEditButton />
                 </div>
-                <div className="descripcion-cursos">
-                  <div className="txt">
-                    <h4> Modalidad </h4>
-                    <p>{data(res.tipo)}</p>
-                    <h4> Duracion </h4>
-                    <p>{res.duracion} Horas</p>
-                    <h4> Descripcion </h4>
-                    <p> {res.descripcion} </p>
+                <h2>{res.nombre}</h2>
+                <h4>{res.id}</h4>
+                <CoursesEditButton nombreC={res.nombre} ident={res.id} />
+              </div>
+              <div className="descripcion-cursos">
+                <div className="txt">
+                  <h4> Modalidad </h4>
+                  <p>{data(res.tipo)}</p>
+                  <h4> Duracion </h4>
+                  <p>{res.duracion} Horas</p>
+                  <h4> Descripcion </h4>
+                  <p> {res.descripcion} </p>
+                </div>
+                <br />
+                <div className="mas">
+                  <div className="mas-informacion">
+                    <Link to={`about/${res.id}`}>
+                      <button>Mas Informacion</button>
+                    </Link>
                   </div>
-                  <br />
-                  <div className="mas">
-                    <div className="mas-informacion">
-                      <Link to={`about/${res.id}`}>
-                        <button>Mas Informacion</button>
-                      </Link>
-                    </div>
-                    <div style={{ display: style() }} className="mas-eliminacion">
-                      <Link to={`delete/${res.id}`}>
-                        <button>Eliminar Curso</button>
-                      </Link>
-                    </div>
+                  <div style={{ display: style() }} className="mas-eliminacion">
+                    <Link to={`delete/${res.id}`}>
+                      <button>Eliminar Curso</button>
+                    </Link>
                   </div>
                 </div>
               </div>
-            );
-          })}
+            </div>
+          );
+        })}
         <CoursesButton />
       </main>
     </div>

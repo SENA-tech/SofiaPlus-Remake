@@ -1,0 +1,87 @@
+.editCourse {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.edit-body-1,
+.edit-body-2,
+.edit-header,
+.mb-3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.edit-header {
+    padding: 15px 25px 15px 25px;
+    background-color: #67b23e;
+}
+
+.edit-body {
+    margin: 20px 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+}
+
+.edit-body-1,
+.edit-body-2 {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.EditInputs {
+    border: none;
+    outline: #757575 1px solid;
+    border-radius: 7px;
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    margin: 15px auto;
+}
+
+.mb-3-edit {
+    width: 65%;
+}
+
+.EditInputs:hover,
+.EditInputs:focus {
+    outline: 3px solid #67b23e;
+}
+
+.edit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-primary-edit {
+    position: relative;
+    outline: #4b7f30 3px solid;
+    margin-top: 10px;
+    text-align: center;
+    margin: 10px 20px 20px;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #67b23e;
+    color: white;
+    border: 0px white solid;
+}
+
+.btn-primary-edit:hover {
+    background: #4b7f30;
+}

@@ -87,7 +87,7 @@
   outline: #757575 1px solid;
   border-radius: 7px;
   text-align: center;
-  width: 80%;
+  width: 100%;
   height: 25px;
   margin: 15px auto;
 }
@@ -114,5 +114,8 @@
   }
   .mb-3-names {
     width: 45%;
+  }
+  .LoginInputs{
+    width: 80%;
   }
 }

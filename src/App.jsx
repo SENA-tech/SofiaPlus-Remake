@@ -24,7 +24,9 @@ import {
   Courses,
   DataConsent,
   CoursesCreate,
-  DeleteCourse
+  DeleteCourse,
+  EditCourse,
+  EditProfile
 } from "./Router";
 
 import { paths } from "./path";
@@ -66,9 +68,12 @@ export default function App() {
         <Route path="/support" element={<Suport />} />
         <Route path="/search" element={<Class />} />
         <Route path="/search/createcourse" element={<CoursesCreate />} />
+        <Route path="/search/editcourse/:ID" element={<EditCourse />} />
         <Route path="/search/delete/:ID" element={<DeleteCourse />}/>
         <Route path="/search/about/:courseId" element={<Courses />} />
-        <Route path="/profile/:userId" element={<User />} />
+        <Route path="/profile/:userId" element={<User />} >
+          <Route path="edit" element={<EditProfile />} />
+        </Route>
         <Route path="*" element={<Error404 />} />
         <Route path="/team" element={<TeamInfo />} />
         <Route path="/dataconsent" element={<DataConsent />} />

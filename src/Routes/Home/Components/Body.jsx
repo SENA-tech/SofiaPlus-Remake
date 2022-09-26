@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { mods, FlechaDown, FlechaAyuda, help, Banner } from "../data";
 
 export default function BodyPrincipal() {
-
   return (
     <div>
       <section className="contenedor">
@@ -21,9 +20,9 @@ export default function BodyPrincipal() {
             <div id="boton">
               <Link id="boton-link" to="/search">
                 <button>
-                  <img src={FlechaDown} width="25px" alt="flechas SENA"/>
+                  <img src={FlechaDown} width="25px" alt="flechas SENA" />
                   <h1>Busque la modalidad que prefiera</h1>
-                  <img src={FlechaDown} width="25px" alt="flechas SENA"/>
+                  <img src={FlechaDown} width="25px" alt="flechas SENA" />
                 </button>
               </Link>
             </div>
@@ -34,7 +33,7 @@ export default function BodyPrincipal() {
                 return (
                   <Link key={e.id} to={e.link}>
                     <div className="card">
-                      <img src={e.img} width="200px" alt="modalidades SENA"/>
+                      <img src={e.img} width="200px" alt="modalidades SENA" />
                       <div className="details">
                         <h4>{e.title}</h4>
                         <p className="details-p">{e.description}</p>
@@ -52,7 +51,7 @@ export default function BodyPrincipal() {
         <h1 id="Anuncements">Anuncios</h1>
         <article className="anun">
           <div className="anuncios">
-            <Link to='/anouncements'>
+            <Link to="/anouncements">
               <img src={Banner} width="800px" alt="SENA anuncios" />
             </Link>
           </div>
@@ -62,13 +61,17 @@ export default function BodyPrincipal() {
                 <Link className="cards-ayuda-link" key={e.id} to={e.link}>
                   <div className="cards-ayuda-1">
                     <figure>
-                      <img src={e.img} width="200px" alt="ayudas SENA"/>
+                      <img src={e.img} width="200px" alt="ayudas SENA" />
                     </figure>
                     <div className="cards-contenido">
                       <h3>{e.title}</h3>
                       <div className="card-contenido-txt">
                         <p>{e.description}</p>
-                        <img src={FlechaAyuda} width="50px" alt="flechas SENA"/>
+                        <img
+                          src={FlechaAyuda}
+                          width="50px"
+                          alt="flechas SENA"
+                        />
                       </div>
                     </div>
                   </div>

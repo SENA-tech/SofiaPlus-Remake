@@ -8,12 +8,22 @@ import useGetCourses from "../../Services/createCourses.services";
 import "./createCourses.css";
 
 export default function CoursesCreate() {
-
-  const { tipo, datafecth, inputDescripcion, inputDuracion, inputFin, inputHabilidades, inputImage, inputInicio, inputInstructor, inputNombre, inputRequisitos, inputTipo } = useGetCourses();
+  const {
+    tipo,
+    datafecth,
+    inputDescripcion,
+    inputDuracion,
+    inputFin,
+    inputHabilidades,
+    inputImage,
+    inputInicio,
+    inputInstructor,
+    inputNombre,
+    inputRequisitos,
+    inputTipo,
+  } = useGetCourses();
 
   let permission = JSON.parse(window.localStorage.getItem("SessionID"));
-
-  
 
   if (window.localStorage.getItem("SessionID")) {
     if (permission._permissions === 1 || 2) {
@@ -32,7 +42,7 @@ export default function CoursesCreate() {
                       Nombre del Curso
                     </label>
                     <input
-                      onChange={ev => inputNombre(ev)}
+                      onChange={(ev) => inputNombre(ev)}
                       required
                       type="text"
                       className="LoginInputs"
@@ -46,7 +56,7 @@ export default function CoursesCreate() {
                       Identificacion de Instructor
                     </label>
                     <input
-                      onChange={ev => inputInstructor(ev)}
+                      onChange={(ev) => inputInstructor(ev)}
                       required
                       type="number"
                       className="LoginInputs"
@@ -60,7 +70,7 @@ export default function CoursesCreate() {
                       Tipos de Modalidad
                     </label>
                     <select
-                      onChange={ev => inputTipo(ev)}
+                      onChange={(ev) => inputTipo(ev)}
                       value={tipo}
                       required
                       name="typeC"
@@ -79,7 +89,7 @@ export default function CoursesCreate() {
                       Imagen de Portada
                     </label>
                     <input
-                      onChange={ev => inputImage(ev)}
+                      onChange={(ev) => inputImage(ev)}
                       required
                       type="text"
                       className="LoginInputs"
@@ -93,7 +103,7 @@ export default function CoursesCreate() {
                       Descripcion
                     </label>
                     <input
-                      onChange={ev => inputDescripcion(ev)}
+                      onChange={(ev) => inputDescripcion(ev)}
                       required
                       type="text"
                       name="descriptionC"
@@ -107,7 +117,7 @@ export default function CoursesCreate() {
                       Requisitos
                     </label>
                     <input
-                      onChange={ev => inputRequisitos(ev)}
+                      onChange={(ev) => inputRequisitos(ev)}
                       required
                       type="text"
                       name="requirementsC"
@@ -121,7 +131,7 @@ export default function CoursesCreate() {
                       Habilidades
                     </label>
                     <input
-                      onChange={ev => inputHabilidades(ev)}
+                      onChange={(ev) => inputHabilidades(ev)}
                       required
                       type="text"
                       name="skillsC"
@@ -136,7 +146,7 @@ export default function CoursesCreate() {
                         Fecha Inicio
                       </label>
                       <input
-                        onChange={ev => inputInicio(ev)}
+                        onChange={(ev) => inputInicio(ev)}
                         type="date"
                         className="LoginInputs"
                         name="startC"
@@ -149,7 +159,7 @@ export default function CoursesCreate() {
                         Fecha FIn
                       </label>
                       <input
-                        onChange={ev => inputFin(ev)}
+                        onChange={(ev) => inputFin(ev)}
                         type="date"
                         className="LoginInputs"
                         name="endC"
@@ -163,7 +173,7 @@ export default function CoursesCreate() {
                       Duracion
                     </label>
                     <input
-                      onChange={ev => inputDuracion(ev)}
+                      onChange={(ev) => inputDuracion(ev)}
                       type="number"
                       className="LoginInputs"
                       name="durationC"

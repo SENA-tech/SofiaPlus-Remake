@@ -1,51 +1,57 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 //Img´s
-import { imgs } from './data';
+import { imgs } from "./data";
 
 //Css
-import "./courses.css"
+import "./courses.css";
 
 export default function CoursesAbout() {
 
-  const [Data, setData] = useState()
+  let permission = JSON.parse(window.localStorage.getItem("SessionID"));
+  const [Data, setData] = useState();
+  const { courseId } = useParams();
 
-  fetch('http://localhost:4000/data/select', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-
+  let inscripcion = () => {
+    fetch("https://SofiaPlus-Web-Server.11-cardozo-joan.repl.co/data/select", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        _token: courseId,
+        _key: permission._token
+      }),
     })
-  })
-    .then(res => res.json())
-    .then(res => setData(res))
-    .catch(err => console.log(err))
-
-  console.log(Data);
+      .then((res) => res.json())
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  };
 
   return (
     <main className="Courses-About">
-      <div class="contenedor-cursos-pagina">
-        <div class="cabeza-cur">
+      <div className="contenedor-cursos-pagina">
+        <div className="cabeza-cur">
           <h1>
             acciones basicas para la atencion de una persona con afectacion de
             la salud
           </h1>
-          <div class="cabeza-cur-ficha">
+          <div className="cabeza-cur-ficha">
             <p>numero de ficha</p>
             <h3>123456</h3>
           </div>
         </div>
       </div>
-      <div class="contenedor-cursos-pagina-1">
-        <div class="informacion-cur">
+      <div className="contenedor-cursos-pagina-1">
+        <div className="informacion-cur">
           <hr className="hr-courses" />
-          <div class="img-programa-cursos">
-            <div class="img-programa-cursos-A">
-              <img src="https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg" alt="fondo cursos" />
+          <div className="img-programa-cursos">
+            <div className="img-programa-cursos-A">
+              <img
+                src="https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg"
+                alt="fondo cursos"
+              />
             </div>
           </div>
           <hr className="hr-courses" />
@@ -94,30 +100,30 @@ export default function CoursesAbout() {
           {/* <hr className="hr-courses"/>
           <h1 className="h1-courses">lugar para ubicacion</h1> */}
         </div>
-        <div class="contenedor-cursos-pagina-2">
-          <div class="modalidad-cur">
+        <div className="contenedor-cursos-pagina-2">
+          <div className="modalidad-cur">
             <p>modalidad</p>
             <h3>presencial</h3>
           </div>
-          <div class="inscripcion-cur">
+          <div className="inscripcion-cur">
             <p>inscripcion desde</p>
             <h3>15 de agosto</h3>
             <h3>30 de septiembre</h3>
           </div>
-          <div class="inscripcion-cur">
+          <div className="inscripcion-cur">
             <p>periodo academico</p>
             <h3>19-08-2022</h3>
             <h3>27-08-2022</h3>
           </div>
-          <div class="tiempo-cur">
+          <div className="tiempo-cur">
             <p>periodo academico</p>
             <p>(tiempo de duracion)</p>
-            <div class="time-cur">
+            <div className="time-cur">
               <h3>2356</h3>
             </div>
             <p>horas</p>
           </div>
-          <div class="otro-tipo-cur">
+          <div className="otro-tipo-cur">
             <h3>otro tipo de informacion requerida</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
@@ -133,35 +139,35 @@ export default function CoursesAbout() {
           </div>
         </div>
       </div>
-      <div class="cont-cur-all">
-        <div class="contenedor-cursos-pagina-3">
-          <div class="inscribirse-cur">
-            <button>
-              <a href="#">!inscribase ahora¡</a>
+      <div className="cont-cur-all">
+        <div className="contenedor-cursos-pagina-3">
+          <div className="inscribirse-cur">
+            <button onClick={() => inscripcion()}>
+              !inscribase ahora¡
             </button>
           </div>
           <hr />
-          <div class="cont-g-c">
-            <div class="guia-cur">
+          <div className="cont-g-c">
+            <div className="guia-cur">
               <button>
                 <Link to="/support">guia de inscripcion</Link>
               </button>
             </div>
-            <div class="compartir-cur">
+            <div className="compartir-cur">
               <p>
                 comparte este curso en <b>redes sociales </b>
               </p>
-              <div class="imagen-redes-cursos-all">
+              <div className="imagen-redes-cursos-all">
                 <a href="https://www.google.com/">
                   <img src={imgs.facebook} />
                 </a>
               </div>
-              <div class="imagen-redes-cursos-all">
+              <div className="imagen-redes-cursos-all">
                 <a href="https://www.google.com/">
                   <img src={imgs.instagram} />
                 </a>
               </div>
-              <div class="imagen-redes-cursos-all">
+              <div className="imagen-redes-cursos-all">
                 <a href="https://www.google.com/">
                   <img src={imgs.twitter} />
                 </a>

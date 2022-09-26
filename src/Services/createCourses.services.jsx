@@ -13,7 +13,6 @@ export default function useGetCourses() {
     const [fin, setFin] = useState();
     const [duracion, setDuracion] = useState();
 
-
     const inputNombre = (event) => {
         setNombre(event.target.value);
     }
@@ -86,6 +85,39 @@ export default function useGetCourses() {
             .catch(err => console.log(err))
     }
 
+    const updatefecth = (code) => {
+
+        let userdata = JSON.parse(window.localStorage.getItem('SessionID'))
+
+        fetch('https://SofiaPlus-Web-Server.11-cardozo-joan.repl.co/data/edit', {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                _permission: userdata._permissions,
+                _code: userdata._key,
+                id: code,
+                name: nombre,
+                teacher: instructor,
+                type: tipo,
+                image: image,
+                description: descripcion,
+                requirements: requisitos,
+                skills: habilidades,
+                start: inicio,
+                end: fin,
+                duration: duracion,
+            })
+        })
+            .then(res => res.json())
+            .then(res => {
+                console.log(res);
+                window.location.reload();
+            })
+            .catch(err => console.log(err))
+    }
+
     return {
         datafecth,
         inputNombre,
@@ -98,6 +130,7 @@ export default function useGetCourses() {
         inputInicio,
         inputFin,
         inputDuracion,
+        updatefecth,
         tipo
     }
 }
