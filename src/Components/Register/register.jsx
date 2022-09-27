@@ -54,7 +54,7 @@ export default function RegisterForm() {
                             </div>
                             <div className="mb-3">
                                 <label htmlFor='contraseña' className="form-label">Tratamiento de datos personales</label>
-                                <p><input type="checkbox" name="consent" id="consent" /> Acepta los Terminos y Condiciones del servicio y su <Link to="/dataconsent" className='ancor' target="_blank" rel="noopener noreferrer">Tratamiento de datos</Link></p>
+                                <p><input type="checkbox" name="consent" id="consent" /> Acepta los Terminos y Condiciones del servicio y su <a target='_blank' href="http://portal.senasofiaplus.edu.co/index.php/seguridad" className='ancor' rel="noopener noreferrer">Tratamiento de datos</a></p>
                                 <br />
                             </div>
                             <Link to='/' aria-label='exit to login form'>
