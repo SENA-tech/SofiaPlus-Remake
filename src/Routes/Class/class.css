@@ -210,7 +210,7 @@ h4 {
   color: #1f4515;
 }
 
-.crear-cursos:hover button, .editar-cursos:hover button {
+.crear-cursos:hover button, .editar-cursos button:hover  {
   color: #1f4515;
   outline: 2px solid #4dad33;
   background-color: #fff;

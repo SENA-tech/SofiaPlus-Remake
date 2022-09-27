@@ -106,18 +106,18 @@ export default function CoursesAbout() {
             <h3>presencial</h3>
           </div>
           <div className="inscripcion-cur">
-            <p>inscripcion desde</p>
+            <p>Inscripción desde</p>
             <h3>15 de agosto</h3>
             <h3>30 de septiembre</h3>
           </div>
           <div className="inscripcion-cur">
-            <p>periodo academico</p>
+            <p>Período académico</p>
             <h3>19-08-2022</h3>
             <h3>27-08-2022</h3>
           </div>
           <div className="tiempo-cur">
-            <p>periodo academico</p>
-            <p>(tiempo de duracion)</p>
+            <p>Tiempo académico</p>
+            <p>(tiempo de duración)</p>
             <div className="time-cur">
               <h3>2356</h3>
             </div>
@@ -143,14 +143,14 @@ export default function CoursesAbout() {
         <div className="contenedor-cursos-pagina-3">
           <div className="inscribirse-cur">
             <button onClick={() => inscripcion()}>
-              !inscribase ahora¡
+              <h2>!  Inscribase Ahora  ¡</h2>
             </button>
           </div>
           <hr />
           <div className="cont-g-c">
             <div className="guia-cur">
               <button>
-                <Link to="/support">guia de inscripcion</Link>
+                <Link to="/support">Guía de Inscripción</Link>
               </button>
             </div>
             <div className="compartir-cur">

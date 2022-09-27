@@ -13,7 +13,7 @@ export default function BodyPrincipal() {
             <div className="texto">
               <h1>!Que le interesa estudiar¡</h1>
               <h3>
-                Sofia Plus le permite estudiar en la modalidad que mas se
+                Sofia Plus le permite estudiar en la modalidad que más se
                 acomode a usted
               </h3>
             </div>

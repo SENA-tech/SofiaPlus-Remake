@@ -23,36 +23,36 @@ const mods = [
     {
         id: 1,
         title: 'Cursos Presenciales',
-        description: 'Certificate en carreras presenciales como tecnico o tecnologo',
-        link: "/search?=facetoface",
+        description: 'Certificate en carreras presenciales como técnico o tecnólogo',
+        link: "/search?=1",
         img: Mod1
     },
     {
         id: 2,
         title: 'Cursos Virtuales',
-        description: 'Certificate en carreras virtuales como tecnico o tecnologo',
-        link: "/search?=virtual",
+        description: 'Certificate en carreras virtuales como técnico o tecnólogo',
+        link: "/search?=3",
         img: Mod2
     },
     {
         id: 3,
         title: 'Cursos Cortos Virtuales',
         description: 'Certificate con cursos cortos de modo virtual',
-        link: "/search?=shorvirtual",
+        link: "/search?=1",
         img: Mod3
     },
     {
         id: 4,
         title: 'Cursos Cortos Presenciales',
         description: 'Certificate con cursos cortos de modo presencial',
-        link: "/search?=shortfacetoface",
+        link: "/search?=1",
         img: Mod4
     },
     {
         id: 5,
         title: 'Cursos De Ingles',
         description: '¿Quieres aprender ingles? entra a nuestros cursos',
-        link: "/search?=english",
+        link: "/search?=1",
         img: Mod5
     }
 ]
@@ -61,7 +61,7 @@ const help = [
     {
         id: 1,
         link: USER_DATA ? `/profile/${USER_DATA._key}` : '/login',
-        title: 'Programa de Formacion',
+        title: 'Programa de Formación',
         description: 'Verifique si se encuentra inscrito',
         img: Ayuda1
     },

@@ -59,12 +59,17 @@ export default function Footer() {
 
                         <div className="row2">
                             <img src={imgs.logoSena} alt='logosSena' />
-                            <label className='row-label'>+57 320 9172705</label>
+                            <label className='row-label'>Desplegado en <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel.com</a> y <a href="https://aws.amazon.com/es/" target="_blank" rel="noopener noreferrer">AWS</a></label>
                         </div>
 
                         <div className="row2">
                             <img src={imgs.logoSena} alt='logosSena' />
                             <label className='row-label'><a href="https://www.sena.edu.co/es-co/Paginas/default.aspx" target="_blank" rel="noopener noreferrer">SENA Official</a></label>
+                        </div>
+
+                        <div className="row2">
+                            <img src={imgs.logoSena} alt='logosSena' />
+                            <label className='row-label'><a href="http://materialesyensayosena.blogspot.com/" target="_blank" rel="noopener noreferrer">SENA CME</a></label>
                         </div>
                     </div>
                 </div>

@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { Link, Navigate } from 'react-router-dom';
 import useProfile from '../../Hooks/useProfile.hook';
 
-//Custom Hooks
-import useAouth from '../../Hooks/useAouth.hook';
-
+//Data
 import data from '../Navbar/data'
 
 //CSS

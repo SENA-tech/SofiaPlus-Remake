@@ -35,6 +35,34 @@ import useGetCourses from "./Services/Curses.services";
 
 export default function App() {
 
+  let local = JSON.parse(window.localStorage.getItem('SessionID'));
+
+  const [estado, setEstado] = useState(true)
+
+  if (local) {
+      if (local._token && estado === true) {
+          fetch('https://SofiaPlus-Web-Server.11-cardozo-joan.repl.co/users/verify', {
+              method: "POST",
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                  _token: local._token
+              })
+          })
+              .then(res => res.json())
+              .then(res => {
+                  if (res.CODE === 200) {
+                      window.localStorage.setItem('SessionID', JSON.stringify(res))
+                  } else {
+                      console.log('Non Session')
+                  }
+              })
+              .catch(e => console.log(e));
+              setEstado(false);
+      }
+  }
+
   const { datafecth } = useGetCourses();
   datafecth();
   const { pathname } = useLocation();
@@ -69,7 +97,7 @@ export default function App() {
         <Route path="/search" element={<Class />} />
         <Route path="/search/createcourse" element={<CoursesCreate />} />
         <Route path="/search/editcourse/:ID" element={<EditCourse />} />
-        <Route path="/search/delete/:ID" element={<DeleteCourse />}/>
+        <Route path="/search/delete/:ID" element={<DeleteCourse />} />
         <Route path="/search/about/:courseId" element={<Courses />} />
         <Route path="/profile/:userId" element={<User />} >
           <Route path="edit" element={<EditProfile />} />

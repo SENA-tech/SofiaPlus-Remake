@@ -15,8 +15,6 @@ export default function NavUser({ visible }) {
     const [Username, setUsername] = useState(' ');
     const [UserType, setUserType] = useState('hola usuario');
 
-    //const { fecth } = Courses();
-
     //useeffect to show the navbar
     useEffect(() => {
         if (!local) {

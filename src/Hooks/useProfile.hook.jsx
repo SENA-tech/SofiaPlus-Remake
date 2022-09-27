@@ -36,6 +36,7 @@ export default function useProfile() {
             .then(res => res.json())
             .then(res => {
                 console.log(res);
+                window.location.reload();
             })
             .catch(e => console.log(e));
     }

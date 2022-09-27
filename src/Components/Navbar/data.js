@@ -13,7 +13,7 @@ const login = [
     },
     {
         type: "Logout",
-        name: "Cerrar Sesion",
+        name: "Cerrar Sesión",
         url: "/logout"
     }
 ];
@@ -21,7 +21,7 @@ const login = [
 const register = [
     {
         type: "Login",
-        name: "Inicia Sesion",
+        name: "Iniciar Sesión",
         url: "login"
     },
     {

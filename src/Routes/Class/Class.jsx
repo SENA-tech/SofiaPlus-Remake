@@ -65,16 +65,16 @@ export default function Classmates() {
                 <div className="txt">
                   <h4> Modalidad </h4>
                   <p>{data(res.tipo)}</p>
-                  <h4> Duracion </h4>
+                  <h4> Descripción </h4>
                   <p>{res.duracion} Horas</p>
-                  <h4> Descripcion </h4>
+                  <h4> Descripción </h4>
                   <p> {res.descripcion} </p>
                 </div>
                 <br />
                 <div className="mas">
                   <div className="mas-informacion">
                     <Link to={`about/${res.id}`}>
-                      <button>Mas Informacion</button>
+                      <button>Más Información</button>
                     </Link>
                   </div>
                   <div style={{ display: style() }} className="mas-eliminacion">
