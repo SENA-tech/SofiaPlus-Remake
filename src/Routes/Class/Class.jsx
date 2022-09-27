@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, Navigate } from "react-router-dom";
+import { Link, Navigate, useSearchParams } from "react-router-dom";
 
 //CSS
 import "./class.css";
@@ -14,6 +14,8 @@ import CoursesEditButton from "./Components/CourseEditButton";
 
 export default function Classmates() {
   const { search } = useSearch();
+  const [params, setParams] = useSearchParams();
+
   const [input, setInput] = useState(search);
   const [datos, setDatos] = useState(true);
 
@@ -30,15 +32,8 @@ export default function Classmates() {
 
   let returned = () => {
     console.log("returned");
+    setInput(search);
     setDatos(!datos);
-    if (datos) {
-      return (
-        <div>
-          <Navigate to="/search" />
-          <Navigate to="/search" />
-        </div>
-      );
-    }
   };
 
   let style = () => {
@@ -51,7 +46,7 @@ export default function Classmates() {
 
   return (
     <div>
-      <Search returned={() => returned()} INPUT={input} />
+      <Search setParams={(ev) => {setParams(ev)}} returned={() => returned()} INPUT={input} />
       <main className="contenedor-cursos">
         {DATA_COURSES.map((res) => {
           return (
