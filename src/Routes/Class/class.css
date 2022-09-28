@@ -206,8 +206,8 @@ h4 {
   margin: 15px auto;
 }
 
-.crear-cursos:hover h2
-  color: #1f4515;, .editar-cursos button:hover h4 {
+.crear-cursos:hover h2,.editar-cursos button:hover h4 {
+  color: #1f4515;
 }
 
 .crear-cursos:hover button, .editar-cursos button:hover  {
