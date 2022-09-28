@@ -2,6 +2,8 @@
   margin: 7.5% 0 0 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .SofiaPlus-User-Sec {
@@ -13,16 +15,23 @@
 }
 
 .Sec1 {
-  width: 30%;
   border: none;
   box-shadow: 0px 0px 12px 2px rgb(0 0 0 / 20%);
+  height: 100%;
+  margin: 25px;
+  width: 100%;
+  max-width: 300px;
+  min-height: 300px;
+  min-width: 300px;
 }
 
 .Sec2 {
   border: none;
   box-shadow: 0px 0px 12px 2px rgb(0 0 0 / 20%);
-  height: 100%;
-  width: 70%;
+  width: auto;
+  min-width: 350px;
+  max-width: 1100px;
+  margin: 25px 10px;
   padding: 20px;
 }
 
