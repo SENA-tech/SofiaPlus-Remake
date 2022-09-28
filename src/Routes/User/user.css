@@ -21,7 +21,7 @@
   margin: 25px;
   width: 100%;
   max-width: 300px;
-  min-height: 300px;
+  min-height: 350px;
   min-width: 300px;
 }
 
@@ -29,10 +29,11 @@
   border: none;
   box-shadow: 0px 0px 12px 2px rgb(0 0 0 / 20%);
   width: auto;
-  min-width: 350px;
+  min-width: 400px;
   max-width: 1100px;
   margin: 25px 10px;
   padding: 20px;
+  
 }
 
 .Sofiaplus-User-s1-profileData {
