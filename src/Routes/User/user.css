@@ -29,6 +29,7 @@
   border: none;
   box-shadow: 0px 0px 12px 2px rgb(0 0 0 / 20%);
   width: auto;
+  height: 100%;
   min-width: 400px;
   max-width: 1100px;
   margin: 25px 10px;
