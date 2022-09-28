@@ -25,7 +25,10 @@ export default function CoursesAbout() {
       }),
     })
       .then((res) => res.json())
-      .then((res) => console.log(res))
+      .then((res) => {
+        window.localStorage.setItem('MESSAGE', res.MESSAGE);
+        window.location.reload();
+      })
       .catch((err) => console.log(err));
   };
 

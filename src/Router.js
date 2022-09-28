@@ -17,6 +17,7 @@ import DeleteCourse from './Routes/DeleteCourse/DeleteCourse';
 import EditCourse from './Routes/EditCourse/EditCourse';
 import EditProfile from './Components/EditProfile/EDitProfile';
 import Anouncements from './Routes/Anouncements/Anouncements';
+import Messages from './Components/Messages/Message';
 
 export {
     Home,
@@ -37,5 +38,6 @@ export {
     DeleteCourse,
     EditCourse,
     EditProfile,
-    Anouncements
+    Anouncements,
+    Messages
 }

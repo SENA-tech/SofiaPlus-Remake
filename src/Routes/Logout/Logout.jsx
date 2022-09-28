@@ -3,6 +3,7 @@ import { Navigate } from "react-router-dom";
 
 export default function Logout() {
 
+    window.localStorage.removeItem('MESSAGE')
     window.localStorage.removeItem('SessionID')
 
     return (

@@ -27,7 +27,8 @@ import {
   DeleteCourse,
   EditCourse,
   EditProfile,
-  Anouncements
+  Anouncements,
+  Messages
 } from "./Router";
 
 import { paths } from "./path";
@@ -37,31 +38,38 @@ import useGetCourses from "./Services/Curses.services";
 export default function App() {
 
   let local = JSON.parse(window.localStorage.getItem('SessionID'));
+  let MESSAGE = window.localStorage.getItem('MESSAGE');
+
+  if (MESSAGE) {
+    console.log();
+  } else {
+    window.localStorage.setItem('MESSAGE', 'Sin Sesión Activa')
+  }
 
   const [estado, setEstado] = useState(true)
 
   if (local) {
-      if (local._token && estado === true) {
-          fetch('https://SofiaPlus-Web-Server.11-cardozo-joan.repl.co/users/verify', {
-              method: "POST",
-              headers: {
-                  'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({
-                  _token: local._token
-              })
-          })
-              .then(res => res.json())
-              .then(res => {
-                  if (res.CODE === 200) {
-                      window.localStorage.setItem('SessionID', JSON.stringify(res))
-                  } else {
-                      console.log('Non Session')
-                  }
-              })
-              .catch(e => console.log(e));
-              setEstado(false);
-      }
+    if (local._token && estado === true) {
+      fetch('https://SofiaPlus-Web-Server.11-cardozo-joan.repl.co/users/verify', {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          _token: local._token
+        })
+      })
+        .then(res => res.json())
+        .then(res => {
+          if (res.CODE === 200) {
+            window.localStorage.setItem('SessionID', JSON.stringify(res))
+          } else {
+            console.log('Non Session')
+          }
+        })
+        .catch(e => console.log(e));
+      setEstado(false);
+    }
   }
 
   const { datafecth } = useGetCourses();
@@ -100,7 +108,7 @@ export default function App() {
         <Route path="/search/editcourse/:ID" element={<EditCourse />} />
         <Route path="/search/delete/:ID" element={<DeleteCourse />} />
         <Route path="/search/about/:courseId" element={<Courses />} />
-        <Route path="/anouncements" element={<Anouncements />}/>
+        <Route path="/anouncements" element={<Anouncements />} />
         <Route path="/profile/:userId" element={<User />} >
           <Route path="edit" element={<EditProfile />} />
         </Route>
@@ -108,6 +116,7 @@ export default function App() {
         <Route path="/team" element={<TeamInfo />} />
         <Route path="/dataconsent" element={<DataConsent />} />
       </Routes>
+      <Messages />
       <Footer />
     </div>
   );

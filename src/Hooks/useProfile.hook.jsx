@@ -35,7 +35,7 @@ export default function useProfile() {
         })
             .then(res => res.json())
             .then(res => {
-                console.log(res);
+                window.localStorage.setItem('MESSAGE', res.MESSAGE)
                 window.location.reload();
             })
             .catch(e => console.log(e));

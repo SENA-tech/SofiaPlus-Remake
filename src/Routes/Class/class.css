@@ -2,9 +2,11 @@
 h4 {
   color: #000000;
 }
+
 .contenedor-cursos p {
   color: #10373e;
 }
+
 .contenedor-cursos {
   width: 95%;
   margin: 250px auto 5%;
@@ -14,6 +16,7 @@ h4 {
   justify-content: center;
   padding: 0 20px;
 }
+
 .contenedor-card-cursos {
   overflow: hidden;
   display: flex;
@@ -28,9 +31,11 @@ h4 {
   box-shadow: 1px 1px 4px 2px rgb(0 0 0 / 20%);
   transition: all 0.2s ease;
 }
+
 .contenedor-card-cursos:hover {
   box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.4);
 }
+
 .header-cursos {
   width: 280px;
   border-right: 1px solid #10373e;
@@ -38,6 +43,7 @@ h4 {
   justify-content: space-around;
   flex-direction: column;
 }
+
 .descripcion-cursos {
   display: flex;
   justify-content: space-around;
@@ -46,6 +52,7 @@ h4 {
   width: 50%;
   border-radius: 6px;
 }
+
 .descripcion-cursos,
 .header-cursos {
   padding: 10px;
@@ -56,9 +63,11 @@ h4 {
   position: relative;
   display: block;
 }
+
 .header-cursos img {
   border-radius: 0%;
 }
+
 .red {
   width: 100px;
   height: 100px;
@@ -78,9 +87,11 @@ h4 {
 .red:hover {
   box-shadow: 0 0px 20px 6px rgba(12, 129, 6, 0.4);
 }
+
 .red img {
   height: 100%;
 }
+
 .header-cursos h2 {
   font-size: 22px;
   margin: 10px 0;
@@ -89,40 +100,51 @@ h4 {
   box-shadow: 0 0px 0 0 rgba(0, 0, 0, 0);
   cursor: default;
 }
+
 .header-cursos:hover h2 {
   color: #217a89;
   /* background-color: rgba(21, 155, 30, 0.4); */
 }
+
 .header-cursos h4 {
   margin-bottom: 30px;
 }
+
 .descripcion-cursos {
   position: relative;
 }
+
 .txt {
   display: flex;
   flex-direction: column;
   margin: 30px 0 0 0;
 }
+
 .txt p,
 h4 {
   margin: 2px;
   cursor: default;
 }
+
 .mas {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.mas-informacion, .mas-eliminacion {
+
+.mas-informacion,
+.mas-eliminacion {
   margin: 0 5px 10px 0;
   display: flex;
   justify-content: center;
 }
-.mas-informacion a, .mas-eliminacion a {
+
+.mas-informacion a,
+.mas-eliminacion a {
   text-decoration: none;
   transition: 0.2s ease;
 }
+
 .mas-informacion button {
   color: #fff;
   width: auto;
@@ -153,17 +175,20 @@ h4 {
   transition: 0.2s ease;
 }
 
-.mas-informacion:hover button, .mas-eliminacion:hover button {
+.mas-informacion:hover button,
+.mas-eliminacion:hover button {
   color: #1f4515;
   background-color: #fff;
   box-shadow: 0 0px 10px 8px rgba(34, 221, 28, 0.2);
 }
 
-.crear-cursos h2, .editar-cursos h4 {
+.crear-cursos h2,
+.editar-cursos h4 {
   color: #fff;
 }
 
-.crear-cursos button, .editar-cursos button {
+.crear-cursos button,
+.editar-cursos button {
   width: 200px;
   height: auto;
   display: flex;
@@ -186,7 +211,8 @@ h4 {
   height: auto;
 }
 
-.editar-cursos, .editar-cursos button {
+.editar-cursos,
+.editar-cursos button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -206,11 +232,13 @@ h4 {
   margin: 15px auto;
 }
 
-.crear-cursos:hover h2,.editar-cursos button:hover h4 {
+.crear-cursos:hover h2,
+.editar-cursos button:hover h4 {
   color: #1f4515;
 }
 
-.crear-cursos:hover button, .editar-cursos button:hover  {
+.crear-cursos:hover button,
+.editar-cursos button:hover {
   color: #1f4515;
   outline: 2px solid #4dad33;
   background-color: #fff;
@@ -389,7 +417,7 @@ h4 {
     margin: 0;
   }
 
-  .crear-cursos button{
+  .crear-cursos button {
     transition: 0.2s ease;
     padding: 10px 30px;
     border-radius: 6px;
@@ -400,7 +428,7 @@ h4 {
     display: flex;
   }
 
-  .editar-cursos button { 
+  .editar-cursos button {
     height: 40px;
   }
 

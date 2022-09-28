@@ -59,9 +59,11 @@ export default function useAouth() {
             .then(res => {
                 if (res.CODE === 200) {
                     window.localStorage.setItem('SessionID', JSON.stringify(res))
+                    window.localStorage.setItem('MESSAGE', res.MESSAGE)
                     window.location.reload()
                 } else {
-                    console.log('Non Session')
+                    window.localStorage.setItem('MESSAGE', res.MESSAGE)
+                    window.location.reload()
                 }
             })
             .catch(e => console.log(e));
