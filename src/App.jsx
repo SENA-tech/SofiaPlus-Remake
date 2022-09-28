@@ -26,7 +26,8 @@ import {
   CoursesCreate,
   DeleteCourse,
   EditCourse,
-  EditProfile
+  EditProfile,
+  Anouncements
 } from "./Router";
 
 import { paths } from "./path";
@@ -99,6 +100,7 @@ export default function App() {
         <Route path="/search/editcourse/:ID" element={<EditCourse />} />
         <Route path="/search/delete/:ID" element={<DeleteCourse />} />
         <Route path="/search/about/:courseId" element={<Courses />} />
+        <Route path="/anouncements" element={<Anouncements />}/>
         <Route path="/profile/:userId" element={<User />} >
           <Route path="edit" element={<EditProfile />} />
         </Route>

@@ -143,7 +143,7 @@ export default function CoursesAbout() {
         <div className="contenedor-cursos-pagina-3">
           <div className="inscribirse-cur">
             <button onClick={() => inscripcion()}>
-              <h2>!  Inscribase Ahora  ¡</h2>
+              <h2>  Inscribase Ahora  </h2>
             </button>
           </div>
           <hr />
@@ -152,26 +152,6 @@ export default function CoursesAbout() {
               <button>
                 <Link to="/support">Guía de Inscripción</Link>
               </button>
-            </div>
-            <div className="compartir-cur">
-              <p>
-                comparte este curso en <b>redes sociales </b>
-              </p>
-              <div className="imagen-redes-cursos-all">
-                <a href="https://www.google.com/">
-                  <img src={imgs.facebook} />
-                </a>
-              </div>
-              <div className="imagen-redes-cursos-all">
-                <a href="https://www.google.com/">
-                  <img src={imgs.instagram} />
-                </a>
-              </div>
-              <div className="imagen-redes-cursos-all">
-                <a href="https://www.google.com/">
-                  <img src={imgs.twitter} />
-                </a>
-              </div>
             </div>
           </div>
         </div>

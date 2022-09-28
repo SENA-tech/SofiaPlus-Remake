@@ -22,14 +22,14 @@ let USER_DATA = JSON.parse(window.localStorage.getItem("SessionID"));
 const mods = [
     {
         id: 1,
-        title: 'Cursos Presenciales',
+        title: 'Carreras Presenciales',
         description: 'Certificate en carreras presenciales como técnico o tecnólogo',
         link: "/search?=1",
         img: Mod1
     },
     {
         id: 2,
-        title: 'Cursos Virtuales',
+        title: 'Carreras Virtuales',
         description: 'Certificate en carreras virtuales como técnico o tecnólogo',
         link: "/search?=3",
         img: Mod2

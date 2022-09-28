@@ -16,6 +16,7 @@ import CoursesCreate from './Components/CreateCourses/createCourses';
 import DeleteCourse from './Routes/DeleteCourse/DeleteCourse';
 import EditCourse from './Routes/EditCourse/EditCourse';
 import EditProfile from './Components/EditProfile/EDitProfile';
+import Anouncements from './Routes/Anouncements/Anouncements';
 
 export {
     Home,
@@ -35,5 +36,6 @@ export {
     CoursesCreate,
     DeleteCourse,
     EditCourse,
-    EditProfile
+    EditProfile,
+    Anouncements
 }
