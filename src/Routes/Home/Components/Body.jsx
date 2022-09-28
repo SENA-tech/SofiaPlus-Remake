@@ -51,9 +51,9 @@ export default function BodyPrincipal() {
         <h1 id="Anuncements">Anuncios</h1>
         <article className="anun">
           <div className="anuncios">
-            <Link to="/anouncements">
+            <a target='_blank' href="http://portal.senasofiaplus.edu.co/index.php/novedades">
               <img src={Banner} width="800px" alt="SENA anuncios" />
-            </Link>
+            </a>
           </div>
           <div className="cards-ayuda">
             {help.map((e) => {

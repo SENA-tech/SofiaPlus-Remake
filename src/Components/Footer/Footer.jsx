@@ -86,7 +86,7 @@ export default function Footer() {
                     <div className="information">
                         <a target='_blank' href="https://www.sena.edu.co/es-co/sena/Paginas/quienesSomos.aspx">Informacion del sena</a> |
                         <a target='_blank' href="http://portal.senasofiaplus.edu.co/index.php/seguridad/tips-de-seguridad-de-la-informacion">Privacion y Politica</a> |
-                        <Link target='_blank' to="/dataconsent">Terminos y Condiciones</Link>
+                        <a target='_blank' href="http://portal.senasofiaplus.edu.co/">Terminos y Condiciones</a>
                     </div>
                 </div>
             </div>
